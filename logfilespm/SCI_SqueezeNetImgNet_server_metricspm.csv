@@ -1,0 +1,42 @@
+Metric,Value
+Number of CPU cores,10
+Average CPU usage (%),33.777
+Peak CPU usage (%),44.2408
+Estimated energy used (J),129570
+Elapsed wall time (s),160.399
+Elapsed CPU time (s),646.71
+Total time taken (ms),159212
+Total data sent (MiB),38514
+Total comm (sent+received) (MiB),77028.5
+Conv data (sent+received) (MiB),36685.2
+MatMul data (sent+received) (MiB),36685.2
+BatchNorm data (sent+received) (MiB),0
+Truncation data (sent+received) (MiB),499.956
+Relu data (sent+received) (MiB),1296.57
+Maxpool data (sent+received) (MiB),1703.74
+Avgpool data (sent+received) (MiB),1.95363
+ArgMax data (sent+received) (MiB),0.754208
+Conv data received (MiB),18300.7
+MatMul data received (MiB),18300.7
+BatchNorm data received (MiB),0
+Truncation data received (MiB),249.976
+Relu data received (MiB),648.286
+Maxpool data received (MiB),851.869
+Avgpool data received (MiB),0.976814
+ArgMax data received (MiB),0.652344
+Conv data sent (MiB),18384.5
+MatMul data sent (MiB),18384.5
+BatchNorm data sent (MiB),0
+Truncation data sent (MiB),249.98
+Relu data sent (MiB),648.286
+Maxpool data sent (MiB),851.869
+Avgpool data sent (MiB),0.976814
+ArgMax data sent (MiB),0.101864
+Total time in Conv (s),138.485
+Total time in MatMul (s),138.437
+Total time in BatchNorm (s),0
+Total time in Truncation (s),2.477
+Total time in Relu (s),7.904
+Total time in MaxPool (s),10.174
+Total time in AvgPool (s),0.024
+Total time in ArgMax (s),0.068

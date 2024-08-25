@@ -1,0 +1,26 @@
+Metric,Value
+Number of CPU cores,8
+Average CPU usage (%),25.3292
+Peak CPU usage (%),46.4924
+Estimated energy used (J),11354.4
+Elapsed wall time (s),20.6234
+Elapsed CPU time (s),43.77
+Total time taken (ms),5.83669
+Total data sent (MiB),870199448
+Total comm (sent+received) (MiB),1494373496
+Conv data (sent+received) (MiB),74.4498
+MatMul data (sent+received) (MiB),74.4498
+BatchNorm data (sent+received) (MiB),0
+Truncation data (sent+received) (MiB),0
+Relu data (sent+received) (MiB),610.044
+Maxpool data (sent+received) (MiB),809.472
+Avgpool data (sent+received) (MiB),0
+ArgMax data (sent+received) (MiB),0
+Total time in Conv (s),3.01793
+Total time in MatMul (s),2.96241
+Total time in BatchNorm (s),0
+Total time in Truncation (s),6.78527
+Total time in Relu (s),6.78527
+Total time in MaxPool (s),9.22158
+Total time in AvgPool (s),0.000734534
+Total time in ArgMax (s),0

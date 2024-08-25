@@ -1,0 +1,42 @@
+Metric,Value
+Number of CPU cores,0
+Average CPU usage (%),True
+Peak CPU usage (%),True
+Estimated energy used (J),0
+Elapsed wall time (s),0
+Elapsed CPU time (s),0
+Total time taken (ms),0
+Total data sent (MiB),0
+Total comm (sent+received) (MiB),0
+Conv data (sent+received) (MiB),0
+MatMul data (sent+received) (MiB),0
+BatchNorm data (sent+received) (MiB),0
+Truncation data (sent+received) (MiB),0
+Relu data (sent+received) (MiB),0
+Maxpool data (sent+received) (MiB),0
+Avgpool data (sent+received) (MiB),0
+ArgMax data (sent+received) (MiB),0
+Conv data received (MiB),0
+MatMul data received (MiB),0
+BatchNorm data received (MiB),0
+Truncation data received (MiB),0
+Relu data received (MiB),0
+Maxpool data received (MiB),0
+Avgpool data received (MiB),0
+ArgMax data received (MiB),0
+Conv data sent (MiB),0
+MatMul data sent (MiB),0
+BatchNorm data sent (MiB),0
+Truncation data sent (MiB),0
+Relu data sent (MiB),0
+Maxpool data sent (MiB),0
+Avgpool data sent (MiB),0
+ArgMax data sent (MiB),0
+Total time in Conv (s),0
+Total time in MatMul (s),0
+Total time in BatchNorm (s),0
+Total time in Truncation (s),0
+Total time in Relu (s),0
+Total time in MaxPool (s),0
+Total time in AvgPool (s),0
+Total time in ArgMax (s),0
