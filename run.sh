@@ -6,11 +6,12 @@ BUILD_DIR="$OPEN_CHEETAH_DIR/build/bin"  # Path to where the executables are loc
 EZPC_DIR="$HOME/Thesis-SNNI-Comparision/EzPC"  # Path to the EzPC directory
 
 # Function to check and install dependencies
+
 install_dependencies() {
     echo "Checking for required dependencies..."
 
     # List of dependencies
-    dependencies=("openssl" "g++" "cmake" "git" "make" "libssl-dev")
+    dependencies=("openssl" "g++" "cmake" "git" "make" "libssl-dev" "libzstd-dev" "libomp-dev")
 
     for dep in "${dependencies[@]}"; do
         if ! dpkg -s "$dep" &>/dev/null; then
@@ -38,24 +39,20 @@ install_dependencies() {
         sudo apt-get install -y cmake
     fi
 
-    # Check and install OpenMP support
-    if ! echo | gcc -fopenmp -o /dev/null -x c - &>/dev/null; then
-        echo "OpenMP support is not available with the current compiler. Installing OpenMP library..."
-        if dpkg -s "libomp-dev" &>/dev/null; then
-            echo "libomp-dev is already installed."
-        else
-            sudo apt-get install -y libomp-dev
-        fi
-    else
-        echo "OpenMP support is available with the current compiler."
-    fi
-
     echo "All dependencies are installed."
 
     # Set OpenSSL root directory if not already set
     if [ -z "$OPENSSL_ROOT_DIR" ]; then
         OPENSSL_ROOT_DIR=$(openssl version -d | cut -d'"' -f2)
         export OPENSSL_ROOT_DIR
+        echo "OPENSSL_ROOT_DIR is set to $OPENSSL_ROOT_DIR"
+    fi
+
+    # Set zstd directory if not already set
+    if [ -z "$zstd_DIR" ]; then
+        zstd_DIR=$(dpkg -L libzstd-dev | grep cmake | head -n 1 | sed 's|/libzstd.so||')
+        export zstd_DIR
+        echo "zstd_DIR is set to $zstd_DIR"
     fi
 
     # Install emp-tool library
@@ -97,8 +94,8 @@ install_dependencies() {
         mkdir -p build
         cd build || exit
         
-        # Configure CMake with proper prefix path for emp-tool
-        cmake -DCMAKE_PREFIX_PATH=/usr/local -DOPENSSL_ROOT_DIR="$OPENSSL_ROOT_DIR" ..
+        # Configure CMake with proper prefix path for emp-tool and zstd
+        cmake -DCMAKE_PREFIX_PATH=/usr/local -DOPENSSL_ROOT_DIR="$OPENSSL_ROOT_DIR" -Dzstd_DIR="$zstd_DIR" ..
         
         make
         sudo make install
