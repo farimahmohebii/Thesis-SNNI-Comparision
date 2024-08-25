@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Set the OpenCheetah and EzPC directories
-OPEN_CHEETAH_DIR="$HOME/OpenCheetah"
+OPEN_CHEETAH_DIR="$HOME/Thesis-SNNI-Comparision/OpenCheetah"
 BUILD_DIR="$OPEN_CHEETAH_DIR/build/bin"  # Path to where the executables are located
-EZPC_DIR="$HOME/EzPC"  # Path to the EzPC directory
+EZPC_DIR="$HOME/Thesis-SNNI-Comparision/EzPC"  # Path to the EzPC directory
 
 # Function to check and install dependencies
 install_dependencies() {
@@ -181,10 +181,10 @@ EOL
         echo "Config file created at $config_file"
 
         # Compile the ONNX model
-        python ~/EzPC/Athos/CompileONNXGraph.py --config "$BENCHMARK_DIR/config.json" --role server
+        python ~/Thesis-SNNI-Comparision/EzPC/Athos/CompileONNXGraph.py --config "$BENCHMARK_DIR/config.json" --role server
         
         # After compiling the ONNX graph, run the conversion of numpy array to fixed-point
-        python ~/EzPC/Athos/CompilerScripts/convert_np_to_fixedpt.py --inp "$BENCHMARK_DIR/preprocessed_image.npy" --config "$BENCHMARK_DIR/config.json"
+        python ~/Thesis-SNNI-Comparision/EzPC/Athos/CompilerScripts/convert_np_to_fixedpt.py --inp "$BENCHMARK_DIR/preprocessed_image.npy" --config "$BENCHMARK_DIR/config.json"
 
         echo "Fixed-point conversion completed and saved in the same directory."
 
@@ -236,10 +236,10 @@ EOL
         echo "Config file created at $config_file"
 
         # Compile the ONNX model
-        python ~/EzPC/Athos/CompileONNXGraph.py --config "$BENCHMARK_DIR/config.json" --role server
+        python ~/Thesis-SNNI-Comparision/EzPC/Athos/CompileONNXGraph.py --config "$BENCHMARK_DIR/config.json" --role server
         
         # After compiling the ONNX graph, run the conversion of numpy array to fixed-point
-        python ~/EzPC/Athos/CompilerScripts/convert_np_to_fixedpt.py --inp "$BENCHMARK_DIR/preprocessed_image.npy" --config "$BENCHMARK_DIR/config.json"
+        python ~/Thesis-SNNI-Comparision/EzPC/Athos/CompilerScripts/convert_np_to_fixedpt.py --inp "$BENCHMARK_DIR/preprocessed_image.npy" --config "$BENCHMARK_DIR/config.json"
 
         echo "Fixed-point conversion completed and saved in the same directory."
 
@@ -657,7 +657,7 @@ compare_csv_files() {
     printf "%s\n" "${selected_files[@]}"
 
     # Run the comparison script with the selected files
-    python3 ~/compare_csv.py "${selected_files[@]}"
+    python3 ~/Thesis-SNNI-Comparision/compare_csv.py "${selected_files[@]}"
 }
 
 # Main loop
