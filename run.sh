@@ -51,6 +51,32 @@ install_dependencies() {
     fi
 
     echo "All dependencies are installed."
+
+    # Install emp-ot library
+    echo "Checking for emp-ot library..."
+
+    # Check if emp-ot is already installed
+    if [ ! -d "/home/mohebifarimah/Thesis-SNNI-Comparision/OpenCheetah/build/include/emp-ot" ]; then
+        echo "emp-ot is not installed. Installing emp-ot..."
+        
+        # Clone emp-ot repository
+        git clone https://github.com/emp-toolkit/emp-ot.git
+        
+        # Build and install emp-ot
+        cd emp-ot || exit
+        mkdir build
+        cd build || exit
+        cmake ..
+        make
+        sudo make install
+        
+        # Return to the original directory
+        cd ../..
+        
+        echo "emp-ot library installed successfully."
+    else
+        echo "emp-ot library is already installed."
+    fi
 }
 
 # Check and install dependencies at the beginning of the script
