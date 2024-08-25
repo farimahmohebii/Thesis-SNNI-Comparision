@@ -1,0 +1,1144 @@
+Number of CPU cores: 8
+Using Eigen for Matmul
+Doing BaseOT ...
+using kkot pack
+using kkot pack
+using kkot pack
+using kkot pack
+After one-time setup, communication
+Thread i = 0, total data sent till now = 184970
+Thread i = 1, total data sent till now = 294765
+Thread i = 2, total data sent till now = 163141
+Thread i = 3, total data sent till now = 294765
+-----------Syncronizing-----------
+secret_share_mod: 137352314881 bitlength: 37
+backend: PrimeField-OT-SCI_HE
+-----------Syncronized - now starting execution-----------
+Conv2DGroupCSF 1 called N=1, H=224, W=224, CI=3, FH=11, FW=11, CO=64, S=4,G=1
+Conv2DCSF 1 called N=1, H=224, W=224, CI=3, FH=11, FW=11, CO=64, S=4
+Time in sec for current conv = 7.404
+Time in sec for current conv = 7.405
+Relu #1 on 193600 points, truncate=1 by 12 bits
+Time in sec for current relu = 1.054
+Maxpool 1 called N=1, H=27, W=27, C=64, ksizeH=3, ksizeW=3
+Time in sec for current maxpool = 1.812
+Conv2DGroupCSF 2 called N=1, H=27, W=27, CI=64, FH=5, FW=5, CO=192, S=1,G=1
+Conv2DCSF 2 called N=1, H=27, W=27, CI=64, FH=5, FW=5, CO=192, S=1
+Time in sec for current conv = 12.518
+Time in sec for current conv = 12.519
+Relu #3 on 139968 points, truncate=1 by 12 bits
+Time in sec for current relu = 0.734
+Maxpool 2 called N=1, H=13, W=13, C=192, ksizeH=3, ksizeW=3
+Time in sec for current maxpool = 1.287
+Conv2DGroupCSF 3 called N=1, H=13, W=13, CI=192, FH=3, FW=3, CO=384, S=1,G=1
+Conv2DCSF 3 called N=1, H=13, W=13, CI=192, FH=3, FW=3, CO=384, S=1
+Time in sec for current conv = 6.602
+Time in sec for current conv = 6.604
+Relu #5 on 64896 points, truncate=1 by 12 bits
+Time in sec for current relu = 0.383
+Conv2DGroupCSF 4 called N=1, H=13, W=13, CI=384, FH=3, FW=3, CO=256, S=1,G=1
+Conv2DCSF 4 called N=1, H=13, W=13, CI=384, FH=3, FW=3, CO=256, S=1
+Time in sec for current conv = 8.692
+Time in sec for current conv = 8.692
+Relu #7 on 43264 points, truncate=1 by 12 bits
+Time in sec for current relu = 0.233
+Conv2DGroupCSF 5 called N=1, H=13, W=13, CI=256, FH=3, FW=3, CO=256, S=1,G=1
+Conv2DCSF 5 called N=1, H=13, W=13, CI=256, FH=3, FW=3, CO=256, S=1
+Time in sec for current conv = 5.816
+Time in sec for current conv = 5.817
+Relu #9 on 43264 points, truncate=1 by 12 bits
+Time in sec for current relu = 0.274
+Maxpool 3 called N=1, H=6, W=6, C=256, ksizeH=3, ksizeW=3
+Time in sec for current maxpool = 0.454
+AvgPool 1 called N=1, H=6, W=6, C=256, ksizeH=1, ksizeW=1
+Time in sec for current avgpool = 0.077
+Matmul called s1,s2,s3 = 1 9216 4096
+Time in sec for current matmul = 277.01
+Relu #11 on 4096 points, truncate=1 by 12 bits
+Time in sec for current relu = 0.145
+Matmul called s1,s2,s3 = 1 4096 4096
+Time in sec for current matmul = 73.477
+Relu #13 on 4096 points, truncate=1 by 12 bits
+Time in sec for current relu = 0.173
+Matmul called s1,s2,s3 = 1 4096 1000
+Time in sec for current matmul = 15.809
+Truncate #1 on 1000 points by 12 bits
+Elapsed wall time: 428.625 seconds
+Elapsed CPU time: 349.5 seconds
+CPU usage: 10.1925 %
+Test end computation
+Elapsed time: 440.958 seconds
+Estimated energy used: 89889.2 joules
+Thread i = 0, total data sent till now = 127191527
+Thread i = 1, total data sent till now = 333347930
+Thread i = 2, total data sent till now = 52385993
+Thread i = 3, total data sent till now = 333348002
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+Total time taken = 417329 milliseconds.
+Total data sent = 806.175 MiB.
+Number of rounds = 837
+Total comm (sent+received) = 1650.64 MiB.
+------------------------------------------------------
+Average CPU usage across all segments: 20.5543 %
+Peak CPU usage during computation: 48.2569 %
+Total time in Conv = 82.069 seconds.
+Total time in MatMul = 366.296 seconds.
+Total time in BatchNorm = 0 seconds.
+Total time in Truncation = 1.579 seconds.
+Total time in Relu = 2.996 seconds.
+Total time in MaxPool = 3.553 seconds.
+Total time in AvgPool = 0.077 seconds.
+Total time in ArgMax = 0 seconds.
+Total time in MatAdd = 0 seconds.
+Total time in MatAddBroadCast = 0 seconds.
+Total time in MulCir = 0 seconds.
+Total time in ScalarMul = 0 seconds.
+Total time in Sigmoid = 0 seconds.
+Total time in Tanh = 0 seconds.
+Total time in Sqrt = 0 seconds.
+Total time in NormaliseL2 = 0 seconds.
+------------------------------------------------------
+Conv data sent = 141.138 MiB.
+MatMul data sent = 0.750375 MiB.
+BatchNorm data sent = 0 MiB.
+Truncation data sent = 139.102 MiB.
+Relu data sent = 238.313 MiB.
+Maxpool data sent = 350.831 MiB.
+Avgpool data sent = 6.60938 MiB.
+ArgMax data sent = 0 MiB.
+MatAdd data sent = 0 MiB.
+MatAddBroadCast data sent = 0 MiB.
+MulCir data sent = 0 MiB.
+Sigmoid data sent = 0 MiB.
+Tanh data sent = 0 MiB.
+Sqrt data sent = 0 MiB.
+NormaliseL2 data sent = 0 MiB.
+------------------------------------------------------
+Conv data (sent+received) = 190.655 MiB.
+Conv data received = 49.517 MiB.
+MatMul data (sent+received) = 85.5957 MiB.
+MatMul data received = 84.8453 MiB.
+BatchNorm data (sent+received) = 0 MiB.
+BatchNorm data received = 0 MiB.
+Truncation data (sent+received) = 278.205 MiB.
+Truncation data received = 139.103 MiB.
+Relu data (sent+received) = 476.627 MiB.
+Relu data received = 238.313 MiB.
+Maxpool data (sent+received) = 701.663 MiB.
+Maxpool data received = 350.831 MiB.
+Avgpool data (sent+received) = 13.2188 MiB.
+Avgpool data received = 6.60938 MiB.
+ArgMax data (sent+received) = 0 MiB.
+ArgMax data received = 0 MiB.
+MatAdd data (sent+received) = 0 MiB.
+MatAdd data received = 0 MiB.
+MatAddBroadCast data (sent+received) = 0 MiB.
+MatAddBroadCast data received = 0 MiB.
+MulCir data (sent+received) = 0 MiB.
+ScalarMul data (sent+received) = 0 MiB.
+Sigmoid data (sent+received) = 0 MiB.
+Tanh data (sent+received) = 0 MiB.
+Sqrt data (sent+received) = 0 MiB.
+NormaliseL2 data (sent+received) = 0 MiB.
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

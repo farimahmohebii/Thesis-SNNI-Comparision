@@ -1,0 +1,7 @@
+{
+  "model_name": "/home/mohebifarimah/EzPC/Athos/Networks/AlexNet/alexnet_Opset16.onnx",
+  "output_tensors": ["36"],
+  "target": "SCI",
+  "scale": 12
+}
+

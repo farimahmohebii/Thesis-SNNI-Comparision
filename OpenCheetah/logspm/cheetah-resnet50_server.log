@@ -1,0 +1,15 @@
+first part
+-rw-rw-r-- 1 mohebifarimah mohebifarimah 87M Aug 18 19:54 pretrained/resnet50_model_scale12.inp
+Running [1;32mbuild/bin/resnet50-cheetah[0m, which might take a while....
+Debugging Information:
+Network: cheetah
+Model: resnet50
+Environment Variables:
+FXP_SCALE: 12
+SS_BITLEN: 37
+NUM_THREADS: 4
+SERVER_PORT: 12345
+Loading input from stdin...
+input loaded, starting computation...
+Server completed successfully.
+Computation done, check out the log file [1;32mcheetah-resnet50_server.log[0m

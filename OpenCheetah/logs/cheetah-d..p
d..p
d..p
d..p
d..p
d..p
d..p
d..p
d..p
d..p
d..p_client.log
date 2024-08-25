@@ -1,0 +1,2 @@
+[0;31mPlease specify the network to run.[0m
+Usage: run-client.sh [cheetah|SCI_HE] [sqnet/resnet50]

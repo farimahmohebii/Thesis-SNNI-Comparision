@@ -1,0 +1,435 @@
+Computation started. CPU and wall clocks initialized.
+Number of CPU cores: 8
+bitlength: 41
+prime_mod: 2199023255552
+Using Eigen for Matmul
+connected
+connected
+connected
+connected
+After base ots, communication = 316594 bytes
+Thread i = 0, total data sent till now = 316594
+Thread i = 1, total data sent till now = 163141
+Thread i = 2, total data sent till now = 294765
+Thread i = 3, total data sent till now = 163141
+-----------Syncronizing-----------
+-----------Syncronized - now starting execution-----------
+Conv2DCSF 1 called N=1, H=230, W=230, CI=3, FH=7, FW=7, CO=64, S=2
+Matmul called s1,s2,s3 = 64 147 12544
+Time in sec for current matmul = 84.162
+Time in sec for current conv = 84.235
+Maxpool 1 called N=1, H=56, W=56, C=64, ksizeH=3, ksizeW=3
+Time in sec for current maxpool = 14.62
+Starting fused batchNorm #1
+Relu 1 called size=200704
+Time in sec for current relu = 1.635
+Conv2DCSF 2 called N=1, H=56, W=56, CI=64, FH=1, FW=1, CO=256, S=1
+Matmul called s1,s2,s3 = 256 64 3136
+Time in sec for current matmul = 37.808
+Time in sec for current conv = 37.816
+Conv2DCSF 3 called N=1, H=56, W=56, CI=64, FH=1, FW=1, CO=64, S=1
+Matmul called s1,s2,s3 = 64 64 3136
+Time in sec for current matmul = 11.614
+Time in sec for current conv = 11.617
+Starting fused batchNorm #2
+Relu 2 called size=200704
+Time in sec for current relu = 2.039
+Conv2DCSF 4 called N=1, H=56, W=56, CI=64, FH=3, FW=3, CO=64, S=1
+Matmul called s1,s2,s3 = 64 576 3136
+Time in sec for current matmul = 84.134
+Time in sec for current conv = 84.145
+Starting fused batchNorm #3
+Relu 3 called size=200704
+Time in sec for current relu = 1.697
+Conv2DCSF 5 called N=1, H=56, W=56, CI=64, FH=1, FW=1, CO=256, S=1
+Matmul called s1,s2,s3 = 256 64 3136
+Time in sec for current matmul = 39.397
+Time in sec for current conv = 39.41
+Starting fused batchNorm #4
+Relu 4 called size=802816
+Time in sec for current relu = 6.806
+Conv2DCSF 6 called N=1, H=56, W=56, CI=256, FH=1, FW=1, CO=64, S=1
+Matmul called s1,s2,s3 = 64 256 3136
+Time in sec for current matmul = 38.858
+Time in sec for current conv = 38.864
+Starting fused batchNorm #5
+Relu 5 called size=200704
+Time in sec for current relu = 1.749
+Conv2DCSF 7 called N=1, H=56, W=56, CI=64, FH=3, FW=3, CO=64, S=1
+Matmul called s1,s2,s3 = 64 576 3136
+Time in sec for current matmul = 89.145
+Time in sec for current conv = 89.161
+Starting fused batchNorm #6
+Relu 6 called size=200704
+Time in sec for current relu = 1.863
+Conv2DCSF 8 called N=1, H=56, W=56, CI=64, FH=1, FW=1, CO=256, S=1
+Matmul called s1,s2,s3 = 256 64 3136
+Time in sec for current matmul = 41.161
+Time in sec for current conv = 41.169
+Starting fused batchNorm #7
+Relu 7 called size=802816
+Time in sec for current relu = 6.904
+Conv2DCSF 9 called N=1, H=56, W=56, CI=256, FH=1, FW=1, CO=64, S=1
+Matmul called s1,s2,s3 = 64 256 3136
+Time in sec for current matmul = 37.402
+Time in sec for current conv = 37.407
+Starting fused batchNorm #8
+Relu 8 called size=200704
+Time in sec for current relu = 1.256
+Conv2DCSF 10 called N=1, H=56, W=56, CI=64, FH=3, FW=3, CO=64, S=1
+Matmul called s1,s2,s3 = 64 576 3136
+Time in sec for current matmul = 82.266
+Time in sec for current conv = 82.28
+Starting fused batchNorm #9
+Relu 9 called size=200704
+Time in sec for current relu = 1.353
+Conv2DCSF 11 called N=1, H=56, W=56, CI=64, FH=1, FW=1, CO=256, S=1
+Matmul called s1,s2,s3 = 256 64 3136
+Time in sec for current matmul = 37.265
+Time in sec for current conv = 37.275
+Starting fused batchNorm #10
+Relu 10 called size=802816
+Time in sec for current relu = 6.72
+Conv2DCSF 12 called N=1, H=56, W=56, CI=256, FH=1, FW=1, CO=512, S=2
+Matmul called s1,s2,s3 = 512 256 784
+Time in sec for current matmul = 75.427
+Time in sec for current conv = 75.433
+Conv2DCSF 13 called N=1, H=56, W=56, CI=256, FH=1, FW=1, CO=128, S=1
+Matmul called s1,s2,s3 = 128 256 3136
+Time in sec for current matmul = 50.328
+Time in sec for current conv = 50.335
+Starting fused batchNorm #11
+Relu 11 called size=401408
+Time in sec for current relu = 1.609
+Conv2DCSF 14 called N=1, H=58, W=58, CI=128, FH=3, FW=3, CO=128, S=2
+Matmul called s1,s2,s3 = 128 1152 784
+Time in sec for current matmul = 47.503
+Time in sec for current conv = 47.511
+Starting fused batchNorm #12
+Relu 12 called size=100352
+Time in sec for current relu = 0.372
+Conv2DCSF 15 called N=1, H=28, W=28, CI=128, FH=1, FW=1, CO=512, S=1
+Matmul called s1,s2,s3 = 512 128 784
+Time in sec for current matmul = 21.239
+Time in sec for current conv = 21.243
+Starting fused batchNorm #13
+Relu 13 called size=401408
+Time in sec for current relu = 1.658
+Conv2DCSF 16 called N=1, H=28, W=28, CI=512, FH=1, FW=1, CO=128, S=1
+Matmul called s1,s2,s3 = 128 512 784
+Time in sec for current matmul = 21.198
+Time in sec for current conv = 21.201
+Starting fused batchNorm #14
+Relu 14 called size=100352
+Time in sec for current relu = 0.38
+Conv2DCSF 17 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=128, S=1
+Matmul called s1,s2,s3 = 128 1152 784
+Time in sec for current matmul = 54.781
+Time in sec for current conv = 54.786
+Starting fused batchNorm #15
+Relu 15 called size=100352
+Time in sec for current relu = 0.66
+Conv2DCSF 18 called N=1, H=28, W=28, CI=128, FH=1, FW=1, CO=512, S=1
+Matmul called s1,s2,s3 = 512 128 784
+Time in sec for current matmul = 30.727
+Time in sec for current conv = 30.732
+Starting fused batchNorm #16
+Relu 16 called size=401408
+Time in sec for current relu = 3.543
+Conv2DCSF 19 called N=1, H=28, W=28, CI=512, FH=1, FW=1, CO=128, S=1
+Matmul called s1,s2,s3 = 128 512 784
+Time in sec for current matmul = 28.039
+Time in sec for current conv = 28.042
+Starting fused batchNorm #17
+Relu 17 called size=100352
+Time in sec for current relu = 1.039
+Conv2DCSF 20 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=128, S=1
+Matmul called s1,s2,s3 = 128 1152 784
+Time in sec for current matmul = 66.291
+Time in sec for current conv = 66.298
+Starting fused batchNorm #18
+Relu 18 called size=100352
+Time in sec for current relu = 0.518
+Conv2DCSF 21 called N=1, H=28, W=28, CI=128, FH=1, FW=1, CO=512, S=1
+Matmul called s1,s2,s3 = 512 128 784
+Time in sec for current matmul = 28.932
+Time in sec for current conv = 28.937
+Starting fused batchNorm #19
+Relu 19 called size=401408
+Time in sec for current relu = 2.967
+Conv2DCSF 22 called N=1, H=28, W=28, CI=512, FH=1, FW=1, CO=128, S=1
+Matmul called s1,s2,s3 = 128 512 784
+Time in sec for current matmul = 33.586
+Time in sec for current conv = 33.589
+Starting fused batchNorm #20
+Relu 20 called size=100352
+Time in sec for current relu = 0.431
+Conv2DCSF 23 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=128, S=1
+Matmul called s1,s2,s3 = 128 1152 784
+Time in sec for current matmul = 47.088
+Time in sec for current conv = 47.094
+Starting fused batchNorm #21
+Relu 21 called size=100352
+Time in sec for current relu = 0.372
+Conv2DCSF 24 called N=1, H=28, W=28, CI=128, FH=1, FW=1, CO=512, S=1
+Matmul called s1,s2,s3 = 512 128 784
+Time in sec for current matmul = 31.07
+Time in sec for current conv = 31.074
+Starting fused batchNorm #22
+Relu 22 called size=401408
+Time in sec for current relu = 1.605
+Conv2DCSF 25 called N=1, H=28, W=28, CI=512, FH=1, FW=1, CO=1024, S=2
+Matmul called s1,s2,s3 = 1024 512 196
+Time in sec for current matmul = 40.613
+Time in sec for current conv = 40.62
+Conv2DCSF 26 called N=1, H=28, W=28, CI=512, FH=1, FW=1, CO=256, S=1
+Matmul called s1,s2,s3 = 256 512 784
+Time in sec for current matmul = 41.673
+Time in sec for current conv = 41.677
+Starting fused batchNorm #23
+Relu 23 called size=200704
+Time in sec for current relu = 0.769
+Conv2DCSF 27 called N=1, H=30, W=30, CI=256, FH=3, FW=3, CO=256, S=2
+Matmul called s1,s2,s3 = 256 2304 196
+Time in sec for current matmul = 46.168
+Time in sec for current conv = 46.174
+Starting fused batchNorm #24
+Relu 24 called size=50176
+Time in sec for current relu = 0.215
+Conv2DCSF 28 called N=1, H=14, W=14, CI=256, FH=1, FW=1, CO=1024, S=1
+Matmul called s1,s2,s3 = 1024 256 196
+Time in sec for current matmul = 20.554
+Time in sec for current conv = 20.558
+Starting fused batchNorm #25
+Relu 25 called size=200704
+Time in sec for current relu = 0.817
+Conv2DCSF 29 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=256, S=1
+Matmul called s1,s2,s3 = 256 1024 196
+Time in sec for current matmul = 20.867
+Time in sec for current conv = 20.87
+Starting fused batchNorm #26
+Relu 26 called size=50176
+Time in sec for current relu = 0.22
+Conv2DCSF 30 called N=1, H=14, W=14, CI=256, FH=3, FW=3, CO=256, S=1
+Matmul called s1,s2,s3 = 256 2304 196
+Time in sec for current matmul = 46.008
+Time in sec for current conv = 46.021
+Starting fused batchNorm #27
+Relu 27 called size=50176
+Time in sec for current relu = 0.207
+Conv2DCSF 31 called N=1, H=14, W=14, CI=256, FH=1, FW=1, CO=1024, S=1
+Matmul called s1,s2,s3 = 1024 256 196
+Time in sec for current matmul = 20.539
+Time in sec for current conv = 20.543
+Starting fused batchNorm #28
+Relu 28 called size=200704
+Time in sec for current relu = 0.81
+Conv2DCSF 32 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=256, S=1
+Matmul called s1,s2,s3 = 256 1024 196
+Time in sec for current matmul = 20.806
+Time in sec for current conv = 20.809
+Starting fused batchNorm #29
+Relu 29 called size=50176
+Time in sec for current relu = 0.196
+Conv2DCSF 33 called N=1, H=14, W=14, CI=256, FH=3, FW=3, CO=256, S=1
+Matmul called s1,s2,s3 = 256 2304 196
+Time in sec for current matmul = 46.007
+Time in sec for current conv = 46.013
+Starting fused batchNorm #30
+Relu 30 called size=50176
+Time in sec for current relu = 0.198
+Conv2DCSF 34 called N=1, H=14, W=14, CI=256, FH=1, FW=1, CO=1024, S=1
+Matmul called s1,s2,s3 = 1024 256 196
+Time in sec for current matmul = 20.519
+Time in sec for current conv = 20.522
+Starting fused batchNorm #31
+Relu 31 called size=200704
+Time in sec for current relu = 0.804
+Conv2DCSF 35 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=256, S=1
+Matmul called s1,s2,s3 = 256 1024 196
+Time in sec for current matmul = 22.456
+Time in sec for current conv = 22.458
+Starting fused batchNorm #32
+Relu 32 called size=50176
+Time in sec for current relu = 0.238
+Conv2DCSF 36 called N=1, H=14, W=14, CI=256, FH=3, FW=3, CO=256, S=1
+Matmul called s1,s2,s3 = 256 2304 196
+Time in sec for current matmul = 58.124
+Time in sec for current conv = 58.131
+Starting fused batchNorm #33
+Relu 33 called size=50176
+Time in sec for current relu = 0.336
+Conv2DCSF 37 called N=1, H=14, W=14, CI=256, FH=1, FW=1, CO=1024, S=1
+Matmul called s1,s2,s3 = 1024 256 196
+Time in sec for current matmul = 22.962
+Time in sec for current conv = 22.967
+Starting fused batchNorm #34
+Relu 34 called size=200704
+Time in sec for current relu = 0.786
+Conv2DCSF 38 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=256, S=1
+Matmul called s1,s2,s3 = 256 1024 196
+Time in sec for current matmul = 20.756
+Time in sec for current conv = 20.759
+Starting fused batchNorm #35
+Relu 35 called size=50176
+Time in sec for current relu = 0.2
+Conv2DCSF 39 called N=1, H=14, W=14, CI=256, FH=3, FW=3, CO=256, S=1
+Matmul called s1,s2,s3 = 256 2304 196
+Time in sec for current matmul = 46.177
+Time in sec for current conv = 46.183
+Starting fused batchNorm #36
+Relu 36 called size=50176
+Time in sec for current relu = 0.194
+Conv2DCSF 40 called N=1, H=14, W=14, CI=256, FH=1, FW=1, CO=1024, S=1
+Matmul called s1,s2,s3 = 1024 256 196
+Time in sec for current matmul = 20.588
+Time in sec for current conv = 20.592
+Starting fused batchNorm #37
+Relu 37 called size=200704
+Time in sec for current relu = 0.783
+Conv2DCSF 41 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=256, S=1
+Matmul called s1,s2,s3 = 256 1024 196
+Time in sec for current matmul = 20.873
+Time in sec for current conv = 20.875
+Starting fused batchNorm #38
+Relu 38 called size=50176
+Time in sec for current relu = 0.234
+Conv2DCSF 42 called N=1, H=14, W=14, CI=256, FH=3, FW=3, CO=256, S=1
+Matmul called s1,s2,s3 = 256 2304 196
+Time in sec for current matmul = 46.17
+Time in sec for current conv = 46.177
+Starting fused batchNorm #39
+Relu 39 called size=50176
+Time in sec for current relu = 0.199
+Conv2DCSF 43 called N=1, H=14, W=14, CI=256, FH=1, FW=1, CO=1024, S=1
+Matmul called s1,s2,s3 = 1024 256 196
+Time in sec for current matmul = 20.464
+Time in sec for current conv = 20.468
+Starting fused batchNorm #40
+Relu 40 called size=200704
+Time in sec for current relu = 0.763
+Conv2DCSF 44 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=2048, S=2
+Matmul called s1,s2,s3 = 2048 1024 49
+Time in sec for current matmul = 40.037
+Time in sec for current conv = 40.053
+Conv2DCSF 45 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=512, S=1
+Matmul called s1,s2,s3 = 512 1024 196
+Time in sec for current matmul = 40.384
+Time in sec for current conv = 40.389
+Starting fused batchNorm #41
+Relu 41 called size=100352
+Time in sec for current relu = 0.391
+Conv2DCSF 46 called N=1, H=16, W=16, CI=512, FH=3, FW=3, CO=512, S=2
+Matmul called s1,s2,s3 = 512 4608 49
+Time in sec for current matmul = 45.475
+Time in sec for current conv = 45.51
+Starting fused batchNorm #42
+Relu 42 called size=25088
+Time in sec for current relu = 0.113
+Conv2DCSF 47 called N=1, H=7, W=7, CI=512, FH=1, FW=1, CO=2048, S=1
+Matmul called s1,s2,s3 = 2048 512 49
+Time in sec for current matmul = 20.606
+Time in sec for current conv = 20.62
+Starting fused batchNorm #43
+Relu 43 called size=100352
+Time in sec for current relu = 0.375
+Conv2DCSF 48 called N=1, H=7, W=7, CI=2048, FH=1, FW=1, CO=512, S=1
+Matmul called s1,s2,s3 = 512 2048 49
+Time in sec for current matmul = 20.757
+Time in sec for current conv = 20.768
+Starting fused batchNorm #44
+Relu 44 called size=25088
+Time in sec for current relu = 0.134
+Conv2DCSF 49 called N=1, H=7, W=7, CI=512, FH=3, FW=3, CO=512, S=1
+Matmul called s1,s2,s3 = 512 4608 49
+Time in sec for current matmul = 45.391
+Time in sec for current conv = 45.42
+Starting fused batchNorm #45
+Relu 45 called size=25088
+Time in sec for current relu = 0.11
+Conv2DCSF 50 called N=1, H=7, W=7, CI=512, FH=1, FW=1, CO=2048, S=1
+Matmul called s1,s2,s3 = 2048 512 49
+Time in sec for current matmul = 20.477
+Time in sec for current conv = 20.486
+Starting fused batchNorm #46
+Relu 46 called size=100352
+Time in sec for current relu = 0.388
+Conv2DCSF 51 called N=1, H=7, W=7, CI=2048, FH=1, FW=1, CO=512, S=1
+Matmul called s1,s2,s3 = 512 2048 49
+Time in sec for current matmul = 20.789
+Time in sec for current conv = 20.801
+Starting fused batchNorm #47
+Relu 47 called size=25088
+Time in sec for current relu = 0.098
+Conv2DCSF 52 called N=1, H=7, W=7, CI=512, FH=3, FW=3, CO=512, S=1
+Matmul called s1,s2,s3 = 512 4608 49
+Time in sec for current matmul = 45.293
+Time in sec for current conv = 45.324
+Starting fused batchNorm #48
+Relu 48 called size=25088
+Time in sec for current relu = 0.126
+Conv2DCSF 53 called N=1, H=7, W=7, CI=512, FH=1, FW=1, CO=2048, S=1
+Matmul called s1,s2,s3 = 2048 512 49
+Time in sec for current matmul = 20.414
+Time in sec for current conv = 20.423
+Starting fused batchNorm #49
+Relu 49 called size=100352
+Time in sec for current relu = 0.374
+AvgPool 1 called N=1, H=1, W=1, C=2048, ksizeH=7, ksizeW=7
+Time in sec for current avgpool = 0.046
+Matmul called s1,s2,s3 = 1 2048 1001
+Time in sec for current matmul = 1.346
+ArgMax 1 called, s1=1, s2=1001
+Elapsed wall time: 2372.22 seconds
+Elapsed CPU time: 6754.63 seconds
+CPU usage: 35.5924 %
+Elapsed time: 2372.71 seconds
+Estimated energy used: 1.68901e+06 joules
+Thread i = 0, total data sent till now = 120995243055
+Thread i = 1, total data sent till now = 113433694949
+Thread i = 2, total data sent till now = 115071019410
+Thread i = 3, total data sent till now = 113347123941
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+Total time taken = 2359483 milliseconds.
+Total data sent = 441404 MiB.
+Number of rounds = 4809
+Average CPU usage across all segments: 28.5831 %
+Peak CPU usage during computation: 49.179 %
+Total comm (sent+received) = (see SERVER OUTPUT)
+------------------------------------------------------
+Total time in Conv = 2041.87 seconds.
+Total time in MatMul = 2042.71 seconds.
+Total time in BatchNorm = 49.63 seconds.
+Total time in Truncation = 194.016 seconds.
+Total time in Relu = 57.254 seconds.
+Total time in MaxPool = 14.62 seconds.
+Total time in AvgPool = 0.046 seconds.
+Total time in ArgMax = 0.085 seconds.
+Total time in MatAdd = 0 seconds.
+Total time in MatAddBroadCast = 0 seconds.
+Total time in MulCir = 0 seconds.
+Total time in ScalarMul = 0 seconds.
+Total time in Sigmoid = 0 seconds.
+Total time in Tanh = 0 seconds.
+Total time in Sqrt = 0 seconds.
+Total time in NormaliseL2 = 0 seconds.
+------------------------------------------------------
+Conv data sent = 212094 MiB.
+MatMul data sent = 212200 MiB.
+BatchNorm data sent = 3370.13 MiB.
+Truncation data sent = 6630.7 MiB.
+Relu data sent = 2812.28 MiB.
+Maxpool data sent = 502.59 MiB.
+Avgpool data sent = 1.44458 MiB.
+ArgMax data sent = 0.652344 MiB.
+MatAdd data sent = 0 MiB.
+MatAddBroadCast data sent = 0 MiB.
+MulCir data sent = 0 MiB.
+Sigmoid data sent = 0 MiB.
+Tanh data sent = 0 MiB.
+Sqrt data sent = 0 MiB.
+NormaliseL2 data sent = 0 MiB.
+------------------------------------------------------
+249

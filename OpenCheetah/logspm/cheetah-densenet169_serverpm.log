@@ -1,0 +1,49 @@
+first part
+-rw-rw-r-- 1 mohebifarimah mohebifarimah 46M Aug 18 19:54 pretrained/densenet169_model_scale12.inp
+Running [1;32mbuild/bin/densenet169-cheetah[0m, which might take a while....
+Debugging Information:
+Network: cheetah
+Model: densenet169
+Environment Variables:
+FXP_SCALE: 12
+SS_BITLEN: 37
+NUM_THREADS: 4
+SERVER_PORT: 12345
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:348] flood_ciphertext: demands more coeff_modulus
+[RandomMaskPoly]@/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc$773
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:348] flood_ciphertext: demands more coeff_modulus
+[RandomMaskPoly]@/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc$773
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+[/home/mohebifarimah/OpenCheetah/include/gemini/cheetah/hom_conv2d_ss.cc:403] truncate_for_decryption: ct.size() should be 2
+Server encountered an error.
+Computation done, check out the log file [1;32mcheetah-densenet169_server.log[0m

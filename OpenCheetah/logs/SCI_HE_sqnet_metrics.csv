@@ -1,0 +1,39 @@
+Metric,Value
+Number of CPU cores,4
+Elapsed wall time (s),114.073
+Elapsed CPU time (s),110.35
+CPU usage (%),24.1842
+Total time in Conv (s),57.571
+Total time in MatMul (s),0
+Total time in BatchNorm (s),0
+Total time in Truncation (s),8.401
+Total time in Relu (s),15.482
+Total time in MaxPool (s),20.578
+Total time in AvgPool (s),0.028
+Total time in ArgMax (s),0.053
+Total time in MatAdd (s),0
+Total time in MatAddBroadCast (s),0
+Total time in MulCir (s),0
+Total time in ScalarMul (s),0
+Total time in Sigmoid (s),0
+Total time in Tanh (s),0
+Total time in Sqrt (s),0
+Total time in NormaliseL2 (s),0
+Total data sent (MiB),3364.16
+Estimated energy used (J),55223.4
+Total comm rounds,1708
+Conv data sent (MiB),444.417
+MatMul data sent (MiB),0
+BatchNorm data sent (MiB),0
+Truncation data sent (MiB),576.913
+Relu data sent (MiB),1004.25
+Maxpool data sent (MiB),1336.34
+Avgpool data sent (MiB),1.10473
+ArgMax data sent (MiB),1.13604
+MatAdd data sent (MiB),0
+MatAddBroadCast data sent (MiB),0
+MulCir data sent (MiB),0
+Sigmoid data sent (MiB),0
+Tanh data sent (MiB),0
+Sqrt data sent (MiB),0
+NormaliseL2 data sent (MiB),0

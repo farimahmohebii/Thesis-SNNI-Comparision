@@ -1,0 +1,1609 @@
+Number of CPU cores: 8
+Using Eigen for Matmul
+Doing BaseOT ...
+using silent ot pack
+using silent ot pack
+using silent ot pack
+using silent ot pack
+After one-time setup, communication
+Thread i = 0, total data sent till now = 1997762
+Thread i = 1, total data sent till now = 1726247
+Thread i = 2, total data sent till now = 1726247
+Thread i = 3, total data sent till now = 1726247
+-----------Syncronizing-----------
+secret_share_mod: 137438953472 bitlength: 37
+backend: Ring-SilentOT-Cheetah
+-----------Syncronized - now starting execution-----------
+HomConv #1 called N=1, H=224, W=224, CI=3, FH=7, FW=7, CO=64, S=2, Padding SAME (3 2 3 2)
+Time in sec for current conv = [1.394] sent [2.85745] MB
+expect -4964117 but got -4964116
+expect 4738399 but got 4738400
+expect -16691798 but got -16691799
+expect 2179512 but got 2179511
+[32mConvolution Output Matches[0m
+Maxpool 1 called N=1, H=56, W=56, C=64, ksizeH=3, ksizeW=3
+Time in sec for current maxpool = 6.975
+Relu #1 on 200704 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 2.601
+HomBN #1 via element-wise mult on 200704 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #3 on 200704 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.25
+HomConv #2 called N=1, H=56, W=56, CI=64, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.331] sent [3.81018] MB
+expect -3962270 but got -3962269
+expect -2331709 but got -2331708
+[32mConvolution Output Matches[0m
+Relu #5 on 401408 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.518
+HomConv #3 called N=1, H=56, W=56, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.496] sent [7.6205] MB
+expect -786369 but got -786368
+expect -2776847 but got -2776846
+[32mConvolution Output Matches[0m
+Truncate #1 on 100352 points by 12 bits
+HomBN #2 via element-wise mult on 301056 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #7 on 301056 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.376
+HomConv #4 called N=1, H=56, W=56, CI=96, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.399] sent [5.71477] MB
+expect -5323676 but got -5323675
+expect -4167681 but got -4167680
+expect 1524766 but got 1524765
+[32mConvolution Output Matches[0m
+Relu #9 on 401408 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.497
+HomConv #5 called N=1, H=56, W=56, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.487] sent [7.61977] MB
+expect 1699056 but got 1699057
+expect -4792767 but got -4792766
+[32mConvolution Output Matches[0m
+Truncate #2 on 100352 points by 12 bits
+HomBN #3 via element-wise mult on 401408 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #11 on 401408 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 2.772
+HomConv #6 called N=1, H=56, W=56, CI=128, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.474] sent [7.61989] MB
+expect -4504661 but got -4504660
+expect -426376 but got -426375
+[32mConvolution Output Matches[0m
+Relu #13 on 401408 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.496
+HomConv #7 called N=1, H=56, W=56, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.469] sent [7.62015] MB
+expect 2726286 but got 2726287
+expect 8138458 but got 8138459
+[32mConvolution Output Matches[0m
+Truncate #3 on 100352 points by 12 bits
+HomBN #4 via element-wise mult on 501760 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #15 on 501760 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.671
+HomConv #8 called N=1, H=56, W=56, CI=160, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.561] sent [9.52562] MB
+expect 15351564 but got 15351565
+expect 926924 but got 926925
+expect -1076105 but got -1076106
+[32mConvolution Output Matches[0m
+Relu #17 on 401408 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.506
+HomConv #9 called N=1, H=56, W=56, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.478] sent [7.62026] MB
+expect 1424207 but got 1424208
+expect 213927 but got 213928
+[32mConvolution Output Matches[0m
+Truncate #4 on 100352 points by 12 bits
+HomBN #5 via element-wise mult on 602112 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #19 on 602112 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 3.036
+HomConv #10 called N=1, H=56, W=56, CI=192, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.646] sent [11.4297] MB
+expect -1101006 but got -1101005
+expect -2568347 but got -2568346
+expect 29413 but got 29412
+[32mConvolution Output Matches[0m
+Relu #21 on 401408 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 2.78
+HomConv #11 called N=1, H=56, W=56, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.48] sent [7.62021] MB
+expect -1457606 but got -1457605
+expect -1455741 but got -1455740
+[32mConvolution Output Matches[0m
+Truncate #5 on 100352 points by 12 bits
+HomBN #6 via element-wise mult on 702464 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #23 on 702464 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.919
+HomConv #12 called N=1, H=56, W=56, CI=224, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.753] sent [13.3358] MB
+expect -1201321 but got -1201320
+expect -2799298 but got -2799297
+[32mConvolution Output Matches[0m
+Relu #25 on 401408 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 2.808
+HomConv #13 called N=1, H=56, W=56, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.492] sent [7.62032] MB
+expect 2466826 but got 2466827
+expect 3836949 but got 3836950
+[32mConvolution Output Matches[0m
+Truncate #6 on 100352 points by 12 bits
+HomBN #7 via element-wise mult on 802816 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #27 on 802816 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 1.055
+HomConv #14 called N=1, H=56, W=56, CI=256, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.819] sent [15.2403] MB
+expect -6153677 but got -6153676
+expect -460088 but got -460087
+expect 6636611 but got 6636610
+expect -1104134 but got -1104135
+[32mConvolution Output Matches[0m
+AvgPool 1 called N=1, H=28, W=28, C=128, ksizeH=2, ksizeW=2
+Time in sec for current avgpool = 0.383
+Truncate #7 on 100352 points by 12 bits
+HomBN #8 via element-wise mult on 100352 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #29 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.158
+HomConv #15 called N=1, H=28, W=28, CI=128, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.39] sent [1.54785] MB
+expect -5454624 but got -5454623
+expect -2798276 but got -2798275
+[32mConvolution Output Matches[0m
+Relu #31 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.135
+HomConv #16 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.147] sent [1.90501] MB
+expect 412086 but got 412087
+expect -568417 but got -568416
+[32mConvolution Output Matches[0m
+Truncate #8 on 25088 points by 12 bits
+HomBN #9 via element-wise mult on 125440 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #33 on 125440 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.201
+HomConv #17 called N=1, H=28, W=28, CI=160, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.445] sent [1.90521] MB
+expect 10185860 but got 10185861
+expect -4733175 but got -4733174
+[32mConvolution Output Matches[0m
+Relu #35 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.13
+HomConv #18 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.158] sent [1.90501] MB
+expect 6660065 but got 6660066
+expect 282560 but got 282561
+[32mConvolution Output Matches[0m
+Truncate #9 on 25088 points by 12 bits
+HomBN #10 via element-wise mult on 150528 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #37 on 150528 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.197
+HomConv #19 called N=1, H=28, W=28, CI=192, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.511] sent [2.32189] MB
+expect -2825442 but got -2825441
+expect 2199889 but got 2199890
+[32mConvolution Output Matches[0m
+Relu #39 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.117
+HomConv #20 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.148] sent [1.90507] MB
+expect -3082666 but got -3082665
+expect -2080908 but got -2080907
+[32mConvolution Output Matches[0m
+Truncate #10 on 25088 points by 12 bits
+HomBN #11 via element-wise mult on 175616 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #41 on 175616 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.274
+HomConv #21 called N=1, H=28, W=28, CI=224, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.579] sent [2.67917] MB
+expect -6130719 but got -6130718
+expect -1718092 but got -1718091
+[32mConvolution Output Matches[0m
+Truncate #11 on 100352 points by 12 bits
+HomBN #12 via element-wise mult on 100352 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #43 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.138
+HomConv #22 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.147] sent [1.90488] MB
+expect -769345 but got -769344
+expect 365665 but got 365666
+[32mConvolution Output Matches[0m
+Truncate #12 on 25088 points by 12 bits
+HomBN #13 via element-wise mult on 200704 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #45 on 200704 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.26
+HomConv #23 called N=1, H=28, W=28, CI=256, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.628] sent [3.09572] MB
+expect 3891346 but got 3891347
+expect -1158011 but got -1158010
+[32mConvolution Output Matches[0m
+Relu #47 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.135
+HomConv #24 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.148] sent [1.90494] MB
+expect 1242727 but got 1242728
+expect -302622 but got -302621
+[32mConvolution Output Matches[0m
+Truncate #13 on 25088 points by 12 bits
+HomBN #14 via element-wise mult on 225792 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #49 on 225792 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.31
+HomConv #25 called N=1, H=28, W=28, CI=288, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.704] sent [3.45282] MB
+expect -10175600 but got -10175599
+expect 1573100 but got 1573101
+[32mConvolution Output Matches[0m
+Relu #51 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.151
+HomConv #26 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.153] sent [1.90512] MB
+expect -10851 but got -10850
+expect 1784970 but got 1784971
+[32mConvolution Output Matches[0m
+Truncate #14 on 25088 points by 12 bits
+HomBN #15 via element-wise mult on 250880 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #53 on 250880 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.313
+HomConv #27 called N=1, H=28, W=28, CI=320, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.767] sent [3.80995] MB
+expect 5975793 but got 5975794
+expect -6780476 but got -6780475
+[32mConvolution Output Matches[0m
+Relu #55 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.145
+HomConv #28 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.139] sent [1.90499] MB
+expect -1853370 but got -1853369
+expect 5754966 but got 5754967
+[32mConvolution Output Matches[0m
+Truncate #15 on 25088 points by 12 bits
+HomBN #16 via element-wise mult on 275968 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #57 on 275968 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.354
+HomConv #29 called N=1, H=28, W=28, CI=352, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.844] sent [4.22666] MB
+expect 447980 but got 447981
+expect 5801254 but got 5801255
+[32mConvolution Output Matches[0m
+Relu #59 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 2.44
+HomConv #30 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.146] sent [1.90498] MB
+expect -330645 but got -330644
+expect -2251426 but got -2251425
+[32mConvolution Output Matches[0m
+Truncate #16 on 25088 points by 12 bits
+HomBN #17 via element-wise mult on 301056 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #61 on 301056 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.38
+HomConv #31 called N=1, H=28, W=28, CI=384, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.896] sent [4.58416] MB
+expect 2569796 but got 2569797
+expect -5956022 but got -5956021
+[32mConvolution Output Matches[0m
+Relu #63 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.133
+HomConv #32 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.147] sent [1.90529] MB
+expect 3736517 but got 3736518
+expect -1544380 but got -1544379
+[32mConvolution Output Matches[0m
+Truncate #17 on 25088 points by 12 bits
+HomBN #18 via element-wise mult on 326144 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #65 on 326144 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.431
+HomConv #33 called N=1, H=28, W=28, CI=416, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.967] sent [5.00057] MB
+expect -2774764 but got -2774763
+expect -40763 but got -40762
+[32mConvolution Output Matches[0m
+Relu #67 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.159
+HomConv #34 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.15] sent [1.90502] MB
+expect 1915146 but got 1915147
+expect 573675 but got 573676
+[32mConvolution Output Matches[0m
+Truncate #18 on 25088 points by 12 bits
+HomBN #19 via element-wise mult on 351232 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #69 on 351232 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.462
+HomConv #35 called N=1, H=28, W=28, CI=448, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [1.035] sent [5.35756] MB
+expect 3671055 but got 3671056
+expect -837625 but got -837624
+[32mConvolution Output Matches[0m
+Relu #71 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.16
+HomConv #36 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.146] sent [1.90518] MB
+expect 3237118 but got 3237119
+expect -424333 but got -424332
+[32mConvolution Output Matches[0m
+Truncate #19 on 25088 points by 12 bits
+HomBN #20 via element-wise mult on 376320 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #73 on 376320 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.511
+HomConv #37 called N=1, H=28, W=28, CI=480, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [1.099] sent [5.71521] MB
+expect 2482300 but got 2482301
+expect -1403449 but got -1403448
+[32mConvolution Output Matches[0m
+Relu #75 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 2.402
+HomConv #38 called N=1, H=28, W=28, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.16] sent [1.90512] MB
+expect -272802 but got -272801
+expect 580195 but got 580196
+[32mConvolution Output Matches[0m
+Truncate #20 on 25088 points by 12 bits
+HomBN #21 via element-wise mult on 401408 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #77 on 401408 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.528
+HomConv #39 called N=1, H=28, W=28, CI=512, FH=1, FW=1, CO=256, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [2.218] sent [6.13183] MB
+expect -2416567 but got -2416566
+expect -5824185 but got -5824184
+[32mConvolution Output Matches[0m
+AvgPool 2 called N=1, H=14, W=14, C=256, ksizeH=2, ksizeW=2
+Time in sec for current avgpool = 0.199
+Truncate #21 on 50176 points by 12 bits
+HomBN #22 via element-wise mult on 50176 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #79 on 50176 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.073
+HomConv #40 called N=1, H=14, W=14, CI=256, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.24] sent [0.773931] MB
+expect -1800533 but got -1800532
+expect -512063 but got -512062
+[32mConvolution Output Matches[0m
+Relu #81 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.046
+HomConv #41 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.061] sent [0.476221] MB
+expect -4386108 but got -4386107
+expect 536973 but got 536974
+[32mConvolution Output Matches[0m
+Truncate #22 on 6272 points by 12 bits
+HomBN #23 via element-wise mult on 56448 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #83 on 56448 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.093
+HomConv #42 called N=1, H=14, W=14, CI=288, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.249] sent [0.89291] MB
+expect 6109446 but got 6109447
+expect 2134253 but got 2134254
+[32mConvolution Output Matches[0m
+Relu #85 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.047
+HomConv #43 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.053] sent [0.476223] MB
+expect -1449174 but got -1449173
+expect -1429273 but got -1429272
+[32mConvolution Output Matches[0m
+Truncate #23 on 6272 points by 12 bits
+HomBN #24 via element-wise mult on 62720 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #87 on 62720 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.101
+HomConv #44 called N=1, H=14, W=14, CI=320, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.258] sent [0.952473] MB
+expect -3760119 but got -3760118
+expect -8416716 but got -8416715
+[32mConvolution Output Matches[0m
+Relu #89 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.038
+HomConv #45 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.066] sent [0.476328] MB
+expect 879694 but got 879695
+expect -1190574 but got -1190573
+[32mConvolution Output Matches[0m
+Truncate #24 on 6272 points by 12 bits
+HomBN #25 via element-wise mult on 68992 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #91 on 68992 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.081
+HomConv #46 called N=1, H=14, W=14, CI=352, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.271] sent [1.07156] MB
+expect -94835 but got -94834
+expect 805158 but got 805159
+[32mConvolution Output Matches[0m
+Relu #93 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.049
+HomConv #47 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.065] sent [0.476244] MB
+expect 1711574 but got 1711575
+expect 1881635 but got 1881636
+[32mConvolution Output Matches[0m
+Truncate #25 on 6272 points by 12 bits
+HomBN #26 via element-wise mult on 75264 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #95 on 75264 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.092
+HomConv #48 called N=1, H=14, W=14, CI=384, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.304] sent [1.19058] MB
+expect -2294653 but got -2294652
+expect -1420119 but got -1420118
+[32mConvolution Output Matches[0m
+Relu #97 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.04
+HomConv #49 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.063] sent [0.476189] MB
+expect -1912661 but got -1912660
+expect 410005 but got 410006
+[32mConvolution Output Matches[0m
+Truncate #26 on 6272 points by 12 bits
+HomBN #27 via element-wise mult on 81536 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #99 on 81536 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.137
+HomConv #50 called N=1, H=14, W=14, CI=416, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.303] sent [1.25017] MB
+expect -186346 but got -186345
+expect -402465 but got -402464
+[32mConvolution Output Matches[0m
+Relu #101 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.05
+HomConv #51 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.056] sent [0.476265] MB
+expect 378258 but got 378259
+expect 783847 but got 783848
+[32mConvolution Output Matches[0m
+Truncate #27 on 6272 points by 12 bits
+HomBN #28 via element-wise mult on 87808 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #103 on 87808 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.144
+HomConv #52 called N=1, H=14, W=14, CI=448, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.335] sent [1.36919] MB
+expect -1712469 but got -1712468
+expect -3008825 but got -3008824
+[32mConvolution Output Matches[0m
+Relu #105 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.047
+HomConv #53 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.063] sent [0.476361] MB
+expect 1174516 but got 1174517
+expect 610307 but got 610308
+[32mConvolution Output Matches[0m
+Truncate #28 on 6272 points by 12 bits
+HomBN #29 via element-wise mult on 94080 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #107 on 94080 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.136
+HomConv #54 called N=1, H=14, W=14, CI=480, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.352] sent [1.42879] MB
+expect -2877088 but got -2877087
+expect -2444598 but got -2444597
+[32mConvolution Output Matches[0m
+Relu #109 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.047
+HomConv #55 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.065] sent [0.476306] MB
+expect -333679 but got -333678
+expect -2138453 but got -2138452
+[32mConvolution Output Matches[0m
+Truncate #29 on 6272 points by 12 bits
+HomBN #30 via element-wise mult on 100352 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #111 on 100352 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.137
+HomConv #56 called N=1, H=14, W=14, CI=512, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.372] sent [1.54778] MB
+expect 2019623 but got 2019624
+expect -363404 but got -363403
+[32mConvolution Output Matches[0m
+Relu #113 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 2.325
+HomConv #57 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.064] sent [0.476316] MB
+expect -452458 but got -452457
+expect -2464533 but got -2464532
+[32mConvolution Output Matches[0m
+Truncate #30 on 6272 points by 12 bits
+HomBN #31 via element-wise mult on 106624 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #115 on 106624 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.139
+HomConv #58 called N=1, H=14, W=14, CI=544, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.39] sent [1.66704] MB
+expect -163094 but got -163093
+expect -437336 but got -437335
+[32mConvolution Output Matches[0m
+Relu #117 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.035
+HomConv #59 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.062] sent [0.476216] MB
+expect 1113939 but got 1113940
+expect -666097 but got -666096
+[32mConvolution Output Matches[0m
+Truncate #31 on 6272 points by 12 bits
+HomBN #32 via element-wise mult on 112896 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #119 on 112896 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.195
+HomConv #60 called N=1, H=14, W=14, CI=576, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.414] sent [1.72625] MB
+expect -1157752 but got -1157751
+expect 1116080 but got 1116081
+[32mConvolution Output Matches[0m
+Relu #121 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 2.284
+HomConv #61 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.068] sent [0.476264] MB
+expect 1539934 but got 1539935
+expect 368982 but got 368983
+[32mConvolution Output Matches[0m
+Truncate #32 on 6272 points by 12 bits
+HomBN #33 via element-wise mult on 119168 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #123 on 119168 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.171
+HomConv #62 called N=1, H=14, W=14, CI=608, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.43] sent [1.84551] MB
+expect 337369 but got 337370
+expect 470756 but got 470757
+[32mConvolution Output Matches[0m
+Relu #125 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.034
+HomConv #63 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.064] sent [0.47622] MB
+expect 771646 but got 771647
+expect -77341 but got -77340
+[32mConvolution Output Matches[0m
+Truncate #33 on 6272 points by 12 bits
+HomBN #34 via element-wise mult on 125440 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #127 on 125440 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.162
+HomConv #64 called N=1, H=14, W=14, CI=640, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.429] sent [1.90516] MB
+expect -469431 but got -469430
+expect -3044504 but got -3044503
+[32mConvolution Output Matches[0m
+Relu #129 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.046
+HomConv #65 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.063] sent [0.476274] MB
+expect 1986395 but got 1986396
+expect 3231661 but got 3231662
+[32mConvolution Output Matches[0m
+Truncate #34 on 6272 points by 12 bits
+HomBN #35 via element-wise mult on 131712 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #131 on 131712 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.213
+HomConv #66 called N=1, H=14, W=14, CI=672, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.466] sent [2.02405] MB
+expect 71611 but got 71612
+expect -4046733 but got -4046732
+[32mConvolution Output Matches[0m
+Relu #133 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.033
+HomConv #67 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.057] sent [0.476314] MB
+expect -373662 but got -373661
+expect 1415193 but got 1415194
+[32mConvolution Output Matches[0m
+Truncate #35 on 6272 points by 12 bits
+HomBN #36 via element-wise mult on 137984 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #135 on 137984 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.174
+HomConv #68 called N=1, H=14, W=14, CI=704, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.482] sent [2.1431] MB
+expect 1981171 but got 1981172
+expect 2521670 but got 2521671
+[32mConvolution Output Matches[0m
+Relu #137 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.047
+HomConv #69 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.064] sent [0.476287] MB
+expect -3092238 but got -3092237
+expect 1122785 but got 1122786
+[32mConvolution Output Matches[0m
+Truncate #36 on 6272 points by 12 bits
+HomBN #37 via element-wise mult on 144256 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #139 on 144256 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.211
+HomConv #70 called N=1, H=14, W=14, CI=736, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.497] sent [2.20244] MB
+expect -926272 but got -926271
+expect -713021 but got -713020
+[32mConvolution Output Matches[0m
+Relu #141 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.05
+HomConv #71 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.066] sent [0.476325] MB
+expect -154351 but got -154350
+expect 420239 but got 420240
+[32mConvolution Output Matches[0m
+Truncate #37 on 6272 points by 12 bits
+HomBN #38 via element-wise mult on 150528 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #143 on 150528 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.207
+HomConv #72 called N=1, H=14, W=14, CI=768, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.495] sent [2.32151] MB
+expect -4201497 but got -4201496
+expect 641969 but got 641970
+[32mConvolution Output Matches[0m
+Relu #145 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.034
+HomConv #73 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.061] sent [0.476296] MB
+expect -29204 but got -29203
+expect 417801 but got 417802
+[32mConvolution Output Matches[0m
+Truncate #38 on 6272 points by 12 bits
+HomBN #39 via element-wise mult on 156800 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #147 on 156800 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.215
+HomConv #74 called N=1, H=14, W=14, CI=800, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.506] sent [2.38128] MB
+expect -552568 but got -552567
+expect 934645 but got 934646
+[32mConvolution Output Matches[0m
+Relu #149 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.049
+HomConv #75 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.052] sent [0.476355] MB
+expect -824528 but got -824527
+expect 128156 but got 128157
+[32mConvolution Output Matches[0m
+Truncate #39 on 6272 points by 12 bits
+HomBN #40 via element-wise mult on 163072 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #151 on 163072 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.214
+HomConv #76 called N=1, H=14, W=14, CI=832, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.533] sent [2.50029] MB
+expect -1133883 but got -1133882
+expect -954162 but got -954161
+[32mConvolution Output Matches[0m
+Relu #153 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.035
+HomConv #77 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.063] sent [0.476298] MB
+expect -81399 but got -81398
+expect -874566 but got -874565
+[32mConvolution Output Matches[0m
+Truncate #40 on 6272 points by 12 bits
+HomBN #41 via element-wise mult on 169344 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #155 on 169344 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.216
+HomConv #78 called N=1, H=14, W=14, CI=864, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.563] sent [2.61936] MB
+expect 2498128 but got 2498129
+expect -345991 but got -345990
+[32mConvolution Output Matches[0m
+Relu #157 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.05
+HomConv #79 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.061] sent [0.4763] MB
+expect -92234 but got -92233
+expect 3624152 but got 3624153
+[32mConvolution Output Matches[0m
+Truncate #41 on 6272 points by 12 bits
+HomBN #42 via element-wise mult on 175616 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #159 on 175616 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.252
+HomConv #80 called N=1, H=14, W=14, CI=896, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.57] sent [2.67903] MB
+expect 2324598 but got 2324599
+expect 1311435 but got 1311436
+[32mConvolution Output Matches[0m
+Relu #161 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.05
+HomConv #81 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.062] sent [0.476287] MB
+expect 1456713 but got 1456714
+expect 35599 but got 35600
+[32mConvolution Output Matches[0m
+Truncate #42 on 6272 points by 12 bits
+HomBN #43 via element-wise mult on 181888 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #163 on 181888 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.226
+HomConv #82 called N=1, H=14, W=14, CI=928, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.581] sent [2.79807] MB
+expect -4217326 but got -4217325
+expect -4262949 but got -4262948
+[32mConvolution Output Matches[0m
+Relu #165 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.042
+HomConv #83 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.06] sent [0.476169] MB
+expect -649214 but got -649213
+expect 426027 but got 426028
+[32mConvolution Output Matches[0m
+Truncate #43 on 6272 points by 12 bits
+HomBN #44 via element-wise mult on 188160 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #167 on 188160 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.244
+HomConv #84 called N=1, H=14, W=14, CI=960, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.612] sent [2.85744] MB
+expect 2942306 but got 2942307
+expect -3728619 but got -3728618
+[32mConvolution Output Matches[0m
+Relu #169 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.047
+HomConv #85 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.052] sent [0.476138] MB
+expect -236657 but got -236656
+expect 173055 but got 173056
+[32mConvolution Output Matches[0m
+Truncate #44 on 6272 points by 12 bits
+HomBN #45 via element-wise mult on 194432 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #171 on 194432 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.251
+HomConv #86 called N=1, H=14, W=14, CI=992, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.608] sent [2.97647] MB
+expect 4571128 but got 4571129
+expect -94043 but got -94042
+[32mConvolution Output Matches[0m
+Relu #173 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.035
+HomConv #87 called N=1, H=14, W=14, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.061] sent [0.47618] MB
+expect -347336 but got -347335
+expect -1375811 but got -1375810
+[32mConvolution Output Matches[0m
+Truncate #45 on 6272 points by 12 bits
+HomBN #46 via element-wise mult on 200704 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #175 on 200704 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.291
+HomConv #88 called N=1, H=14, W=14, CI=1024, FH=1, FW=1, CO=512, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [2.294] sent [3.09576] MB
+expect 879993 but got 879994
+expect -82907 but got -82906
+[32mConvolution Output Matches[0m
+AvgPool 3 called N=1, H=7, W=7, C=512, ksizeH=2, ksizeW=2
+Time in sec for current avgpool = 0.124
+Truncate #46 on 25088 points by 12 bits
+HomBN #47 via element-wise mult on 25088 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #177 on 25088 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.046
+HomConv #89 called N=1, H=7, W=7, CI=512, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.167] sent [0.416672] MB
+expect -24436 but got -24435
+expect -148777 but got -148776
+[32mConvolution Output Matches[0m
+Relu #179 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.014
+HomConv #90 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.037] sent [0.178649] MB
+expect 144983 but got 144984
+expect 1096987 but got 1096988
+[32mConvolution Output Matches[0m
+Truncate #47 on 1568 points by 12 bits
+HomBN #48 via element-wise mult on 26656 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #181 on 26656 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.049
+HomConv #91 called N=1, H=7, W=7, CI=544, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.167] sent [0.416682] MB
+expect 1788289 but got 1788290
+expect -2518667 but got -2518666
+[32mConvolution Output Matches[0m
+Relu #183 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.017
+HomConv #92 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.039] sent [0.178593] MB
+expect -135544 but got -135543
+expect -64780 but got -64779
+[32mConvolution Output Matches[0m
+Truncate #48 on 1568 points by 12 bits
+HomBN #49 via element-wise mult on 28224 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #185 on 28224 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.033
+HomConv #93 called N=1, H=7, W=7, CI=576, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.172] sent [0.41668] MB
+expect 1485061 but got 1485062
+expect -1698198 but got -1698197
+[32mConvolution Output Matches[0m
+Relu #187 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.016
+HomConv #94 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.034] sent [0.178563] MB
+expect -224632 but got -224631
+expect -407372 but got -407371
+[32mConvolution Output Matches[0m
+Truncate #49 on 1568 points by 12 bits
+HomBN #50 via element-wise mult on 29792 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #189 on 29792 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.035
+HomConv #95 called N=1, H=7, W=7, CI=608, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.181] sent [0.476288] MB
+expect -316260 but got -316259
+expect -466983 but got -466982
+[32mConvolution Output Matches[0m
+Relu #191 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.017
+HomConv #96 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.039] sent [0.178621] MB
+expect -865234 but got -865233
+expect -7314 but got -7313
+[32mConvolution Output Matches[0m
+Truncate #50 on 1568 points by 12 bits
+HomBN #51 via element-wise mult on 31360 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #193 on 31360 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.057
+HomConv #97 called N=1, H=7, W=7, CI=640, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.197] sent [0.47626] MB
+expect -1009144 but got -1009143
+expect 776184 but got 776185
+[32mConvolution Output Matches[0m
+Relu #195 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.014
+HomConv #98 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.039] sent [0.178566] MB
+expect 594012 but got 594013
+expect 120704 but got 120705
+[32mConvolution Output Matches[0m
+Truncate #51 on 1568 points by 12 bits
+HomBN #52 via element-wise mult on 32928 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #197 on 32928 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.06
+HomConv #99 called N=1, H=7, W=7, CI=672, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.194] sent [0.535784] MB
+expect 526264 but got 526265
+expect -1080928 but got -1080927
+[32mConvolution Output Matches[0m
+Relu #199 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.016
+HomConv #100 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.034] sent [0.178621] MB
+expect 1020832 but got 1020833
+expect 1036680 but got 1036681
+[32mConvolution Output Matches[0m
+Truncate #52 on 1568 points by 12 bits
+HomBN #53 via element-wise mult on 34496 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #201 on 34496 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.051
+HomConv #101 called N=1, H=7, W=7, CI=704, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.203] sent [0.535809] MB
+expect 2671573 but got 2671574
+expect -2232411 but got -2232410
+[32mConvolution Output Matches[0m
+Relu #203 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.014
+HomConv #102 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.04] sent [0.178606] MB
+expect -625956 but got -625955
+expect 159363 but got 159364
+[32mConvolution Output Matches[0m
+Truncate #53 on 1568 points by 12 bits
+HomBN #54 via element-wise mult on 36064 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #205 on 36064 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.066
+HomConv #103 called N=1, H=7, W=7, CI=736, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.178] sent [0.535854] MB
+expect -496627 but got -496626
+expect 1152305 but got 1152306
+[32mConvolution Output Matches[0m
+Relu #207 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.013
+HomConv #104 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.039] sent [0.178543] MB
+expect 638521 but got 638522
+expect -32081 but got -32080
+[32mConvolution Output Matches[0m
+Truncate #54 on 1568 points by 12 bits
+HomBN #55 via element-wise mult on 37632 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #209 on 37632 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.059
+HomConv #105 called N=1, H=7, W=7, CI=768, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.201] sent [0.595413] MB
+expect 2010871 but got 2010872
+expect 1435229 but got 1435230
+[32mConvolution Output Matches[0m
+Relu #211 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.017
+HomConv #106 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.039] sent [0.1786] MB
+expect -332344 but got -332343
+expect -488907 but got -488906
+[32mConvolution Output Matches[0m
+Truncate #55 on 1568 points by 12 bits
+HomBN #56 via element-wise mult on 39200 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #213 on 39200 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.046
+HomConv #107 called N=1, H=7, W=7, CI=800, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.201] sent [0.595267] MB
+expect -1063718 but got -1063717
+expect 36231 but got 36232
+[32mConvolution Output Matches[0m
+Relu #215 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.013
+HomConv #108 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.035] sent [0.178587] MB
+expect -181207 but got -181206
+expect 2419007 but got 2419008
+[32mConvolution Output Matches[0m
+Truncate #56 on 1568 points by 12 bits
+HomBN #57 via element-wise mult on 40768 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #217 on 40768 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.062
+HomConv #109 called N=1, H=7, W=7, CI=832, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.227] sent [0.654914] MB
+expect 1403192 but got 1403193
+expect -266958 but got -266957
+[32mConvolution Output Matches[0m
+Relu #219 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.017
+HomConv #110 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.035] sent [0.178579] MB
+expect 848611 but got 848612
+expect -1085121 but got -1085120
+[32mConvolution Output Matches[0m
+Truncate #57 on 1568 points by 12 bits
+HomBN #58 via element-wise mult on 42336 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #221 on 42336 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.069
+HomConv #111 called N=1, H=7, W=7, CI=864, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.232] sent [0.654887] MB
+expect -1127416 but got -1127415
+expect 2501548 but got 2501549
+[32mConvolution Output Matches[0m
+Relu #223 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.013
+HomConv #112 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.034] sent [0.178636] MB
+expect 1338837 but got 1338838
+expect -1045403 but got -1045402
+[32mConvolution Output Matches[0m
+Truncate #58 on 1568 points by 12 bits
+HomBN #59 via element-wise mult on 43904 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #225 on 43904 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.071
+HomConv #113 called N=1, H=7, W=7, CI=896, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.231] sent [0.654935] MB
+expect -1293008 but got -1293007
+expect 2550525 but got 2550526
+[32mConvolution Output Matches[0m
+Relu #227 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.014
+HomConv #114 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.04] sent [0.178581] MB
+expect 1626492 but got 1626493
+expect 1234933 but got 1234934
+[32mConvolution Output Matches[0m
+Truncate #59 on 1568 points by 12 bits
+HomBN #60 via element-wise mult on 45472 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #229 on 45472 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.082
+HomConv #115 called N=1, H=7, W=7, CI=928, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.231] sent [0.714413] MB
+expect 420064 but got 420065
+expect 1559520 but got 1559521
+[32mConvolution Output Matches[0m
+Relu #231 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.014
+HomConv #116 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.039] sent [0.178525] MB
+expect -33688 but got -33687
+expect -125991 but got -125990
+[32mConvolution Output Matches[0m
+Truncate #60 on 1568 points by 12 bits
+HomBN #61 via element-wise mult on 47040 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #233 on 47040 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.082
+HomConv #117 called N=1, H=7, W=7, CI=960, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.23] sent [0.714447] MB
+expect -127185 but got -127184
+expect -687819 but got -687818
+[32mConvolution Output Matches[0m
+Relu #235 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.016
+HomConv #118 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.04] sent [0.17856] MB
+expect -1061267 but got -1061266
+expect -681287 but got -681286
+[32mConvolution Output Matches[0m
+Truncate #61 on 1568 points by 12 bits
+HomBN #62 via element-wise mult on 48608 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #237 on 48608 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.077
+HomConv #119 called N=1, H=7, W=7, CI=992, FH=1, FW=1, CO=128, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.226] sent [0.714309] MB
+expect 83103 but got 83104
+expect 561339 but got 561340
+[32mConvolution Output Matches[0m
+Relu #239 on 6272 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.013
+HomConv #120 called N=1, H=7, W=7, CI=128, FH=3, FW=3, CO=32, S=1, Padding SAME (1 1 1 1)
+Time in sec for current conv = [0.04] sent [0.17858] MB
+expect 802849 but got 802850
+expect 450302 but got 450303
+[32mConvolution Output Matches[0m
+Truncate #62 on 1568 points by 12 bits
+HomBN #63 via element-wise mult on 50176 points
+[32mElemWiseSecretVectorMult Output Matches[0m
+Relu #241 on 50176 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.086
+AvgPool 4 called N=1, H=1, W=1, C=1024, ksizeH=7, ksizeW=7
+Time in sec for current avgpool = 0.008
+HomConv #121 called N=1, H=1, W=1, CI=1024, FH=1, FW=1, CO=1000, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.586] sent [0.059514] MB
+expect -1103439 but got -1103438
+expect 3047 but got 3048
+[32mConvolution Output Matches[0m
+ArgMax 1 called, s1=1, s2=1000
+Elapsed wall time: 121.783 seconds
+Elapsed CPU time: 233.74 seconds
+CPU usage: 23.9915 %
+Test end computation
+Elapsed time: 121.873 seconds
+Estimated energy used: 58478.4 joules
+Thread i = 0, total data sent till now = 806545260
+Thread i = 1, total data sent till now = 121157087
+Thread i = 2, total data sent till now = 42041812
+Thread i = 3, total data sent till now = 121157087
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+Total time taken = 112547 milliseconds.
+Total data sent = 1033.52 MiB.
+Number of rounds = 2360
+Total comm (sent+received) = (see SERVER OUTPUT)
+------------------------------------------------------
+Average CPU usage across all segments: 41.0535 %
+Peak CPU usage during computation: 3282.48 %
+Total time in Conv = 39.604 seconds.
+Total time in MatMul = 0 seconds.
+Total time in BatchNorm = 12.555 seconds.
+Total time in Truncation = 5.968 seconds.
+Total time in Relu = 41.113 seconds.
+Total time in MaxPool = 6.975 seconds.
+Total time in AvgPool = 0.714 seconds.
+Total time in ArgMax = 0.012 seconds.
+Total time in MatAdd = 0 seconds.
+Total time in MatAddBroadCast = 0 seconds.
+Total time in MulCir = 0 seconds.
+Total time in ScalarMul = 0 seconds.
+Total time in Sigmoid = 0 seconds.
+Total time in Tanh = 0 seconds.
+Total time in Sqrt = 0 seconds.
+Total time in NormaliseL2 = 0 seconds.
+------------------------------------------------------
+Conv data sent = 259.62 MiB.
+MatMul data sent = 0 MiB.
+BatchNorm data sent = 469.169 MiB.
+Truncation data sent = 21.7196 MiB.
+Relu data sent = 226.93 MiB.
+Maxpool data sent = 44.5175 MiB.
+Avgpool data sent = 11.5254 MiB.
+ArgMax data sent = 0.0393038 MiB.
+MatAdd data sent = 0 MiB.
+MatAddBroadCast data sent = 0 MiB.
+MulCir data sent = 0 MiB.
+Sigmoid data sent = 0 MiB.
+Tanh data sent = 0 MiB.
+Sqrt data sent = 0 MiB.
+NormaliseL2 data sent = 0 MiB.
+------------------------------------------------------
+top-10 values from DenseNet121
+[0.1041371,0.1014914,0.1006300,0.0942872,0.0901032,0.0883627,0.0868107,0.0846186,0.0836374,0.0828861,]
+predicted label=739

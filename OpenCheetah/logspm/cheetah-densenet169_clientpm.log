@@ -1,0 +1,7 @@
+Running [1;32mbuild/bin/densenet169-cheetah[0m, which might take a while....
+terminate called after throwing an instance of 'std::logic_error'
+  what():  ciphertext data is invalid
+scripts/run-client.sh: line 38:  9868 Done                    cat pretrained/$2_input_scale12_pred*.inp
+      9869 Aborted                 (core dumped) | build/bin/$2-$1 r=2 k=$FXP_SCALE ell=$SS_BITLEN nt=$NUM_THREADS ip=$SERVER_IP p=$SERVER_PORT > $1-$2_client.log
+Client encountered an error.
+Computation done, check out the log file [1;32mcheetah-densenet169_client.log[0m

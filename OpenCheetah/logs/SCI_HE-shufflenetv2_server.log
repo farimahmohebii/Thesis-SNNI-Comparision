@@ -1,0 +1,13 @@
+-rw-rw-r-- 1 mohebifarimah mohebifarimah 5.1M Aug 18 19:54 pretrained/shufflenetv2_model_scale12.inp
+Running [1;32mbuild/bin/shufflenetv2-SCI_HE[0m, which might take a while....
+Debugging Information:
+Network: SCI_HE
+Model: shufflenetv2
+Environment Variables:
+FXP_SCALE: 12
+SS_BITLEN: 37
+NUM_THREADS: 4
+SERVER_PORT: 12345
+Meta file not found: pretrained/shufflenetv2_model_scale12.meta
+Server completed successfully.
+Computation done, check out the log file [1;32mSCI_HE-shufflenetv2_server.log[0m

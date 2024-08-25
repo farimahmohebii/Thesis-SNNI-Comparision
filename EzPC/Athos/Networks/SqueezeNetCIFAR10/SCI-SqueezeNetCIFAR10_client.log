@@ -1,0 +1,160 @@
+Computation started. CPU and wall clocks initialized.
+Number of CPU cores: 8
+bitlength: 41
+prime_mod: 2199023255552
+Using Eigen for Matmul
+connected
+connected
+connected
+connected
+After base ots, communication = 316594 bytes
+Thread i = 0, total data sent till now = 316594
+Thread i = 1, total data sent till now = 163141
+Thread i = 2, total data sent till now = 294765
+Thread i = 3, total data sent till now = 163141
+-----------Syncronizing-----------
+-----------Syncronized - now starting execution-----------
+Conv2DCSF 1 called N=1, H=32, W=32, CI=3, FH=3, FW=3, CO=64, S=1
+Matmul called s1,s2,s3 = 64 27 1024
+Time in sec for current matmul = 2.518
+Time in sec for current conv = 2.519
+Maxpool 1 called N=1, H=16, W=16, C=64, ksizeH=3, ksizeW=3
+Time in sec for current maxpool = 1.541
+Relu 1 called size=16384
+Time in sec for current relu = 0.215
+Conv2DCSF 2 called N=1, H=16, W=16, CI=64, FH=1, FW=1, CO=32, S=1
+Matmul called s1,s2,s3 = 32 64 256
+Time in sec for current matmul = 0.812
+Time in sec for current conv = 0.812
+Relu 2 called size=8192
+Time in sec for current relu = 0.176
+Conv2DCSF 3 called N=1, H=16, W=16, CI=32, FH=1, FW=1, CO=64, S=1
+Matmul called s1,s2,s3 = 64 32 256
+Time in sec for current matmul = 0.756
+Time in sec for current conv = 0.756
+Relu 3 called size=16384
+Time in sec for current relu = 0.251
+Conv2DCSF 4 called N=1, H=16, W=16, CI=32, FH=3, FW=3, CO=64, S=1
+Matmul called s1,s2,s3 = 64 288 256
+Time in sec for current matmul = 4.816
+Time in sec for current conv = 4.817
+Relu 4 called size=16384
+Time in sec for current relu = 0.419
+Conv2DCSF 5 called N=1, H=16, W=16, CI=128, FH=1, FW=1, CO=32, S=1
+Matmul called s1,s2,s3 = 32 128 256
+Time in sec for current matmul = 1.452
+Time in sec for current conv = 1.452
+Relu 5 called size=8192
+Time in sec for current relu = 0.231
+Conv2DCSF 6 called N=1, H=16, W=16, CI=32, FH=1, FW=1, CO=64, S=1
+Matmul called s1,s2,s3 = 64 32 256
+Time in sec for current matmul = 0.838
+Time in sec for current conv = 0.838
+Relu 6 called size=16384
+Time in sec for current relu = 0.199
+Conv2DCSF 7 called N=1, H=16, W=16, CI=32, FH=3, FW=3, CO=64, S=1
+Matmul called s1,s2,s3 = 64 288 256
+Time in sec for current matmul = 4.688
+Time in sec for current conv = 4.689
+Relu 7 called size=16384
+Time in sec for current relu = 0.335
+Maxpool 2 called N=1, H=8, W=8, C=128, ksizeH=3, ksizeW=3
+Time in sec for current maxpool = 0.943
+Conv2DCSF 8 called N=1, H=8, W=8, CI=128, FH=1, FW=1, CO=32, S=1
+Matmul called s1,s2,s3 = 32 128 64
+Time in sec for current matmul = 0.414
+Time in sec for current conv = 0.414
+Relu 8 called size=2048
+Time in sec for current relu = 0.104
+Conv2DCSF 9 called N=1, H=8, W=8, CI=32, FH=1, FW=1, CO=128, S=1
+Matmul called s1,s2,s3 = 128 32 64
+Time in sec for current matmul = 0.352
+Time in sec for current conv = 0.352
+Relu 9 called size=8192
+Time in sec for current relu = 0.19
+Conv2DCSF 10 called N=1, H=8, W=8, CI=32, FH=3, FW=3, CO=128, S=1
+Matmul called s1,s2,s3 = 128 288 64
+Time in sec for current matmul = 1.741
+Time in sec for current conv = 1.741
+Relu 10 called size=8192
+Time in sec for current relu = 0.083
+Conv2DCSF 11 called N=1, H=8, W=8, CI=256, FH=1, FW=1, CO=32, S=1
+Matmul called s1,s2,s3 = 32 256 64
+Time in sec for current matmul = 0.476
+Time in sec for current conv = 0.476
+Relu 11 called size=2048
+Time in sec for current relu = 0.021
+Conv2DCSF 12 called N=1, H=8, W=8, CI=32, FH=1, FW=1, CO=128, S=1
+Matmul called s1,s2,s3 = 128 32 64
+Time in sec for current matmul = 0.212
+Time in sec for current conv = 0.213
+Relu 12 called size=8192
+Time in sec for current relu = 0.049
+Conv2DCSF 13 called N=1, H=8, W=8, CI=32, FH=3, FW=3, CO=128, S=1
+Matmul called s1,s2,s3 = 128 288 64
+Time in sec for current matmul = 1.635
+Time in sec for current conv = 1.636
+Relu 13 called size=8192
+Time in sec for current relu = 0.089
+Conv2DCSF 14 called N=1, H=8, W=8, CI=256, FH=1, FW=1, CO=10, S=1
+Matmul called s1,s2,s3 = 10 256 64
+Time in sec for current matmul = 0.144
+Time in sec for current conv = 0.145
+Relu 14 called size=640
+Time in sec for current relu = 0.029
+AvgPool 1 called N=1, H=1, W=1, C=10, ksizeH=8, ksizeW=8
+Time in sec for current avgpool = 0.044
+ArgMax 1 called, s1=1, s2=10
+Elapsed wall time: 30.6378 seconds
+Elapsed CPU time: 57.37 seconds
+CPU usage: 23.4065 %
+Elapsed time: 30.6406 seconds
+Estimated energy used: 14343.8 joules
+Thread i = 0, total data sent till now = 629600041
+Thread i = 1, total data sent till now = 571285731
+Thread i = 2, total data sent till now = 629508152
+Thread i = 3, total data sent till now = 563933491
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+Total time taken = 26821 milliseconds.
+Total data sent = 2282.51 MiB.
+Number of rounds = 369
+Average CPU usage across all segments: 20.8791 %
+Peak CPU usage during computation: 42.2404 %
+Total comm (sent+received) = (see SERVER OUTPUT)
+------------------------------------------------------
+Total time in Conv = 20.86 seconds.
+Total time in MatMul = 20.854 seconds.
+Total time in BatchNorm = 0 seconds.
+Total time in Truncation = 0.981 seconds.
+Total time in Relu = 2.391 seconds.
+Total time in MaxPool = 2.484 seconds.
+Total time in AvgPool = 0.044 seconds.
+Total time in ArgMax = 0.029 seconds.
+Total time in MatAdd = 0 seconds.
+Total time in MatAddBroadCast = 0 seconds.
+Total time in MulCir = 0 seconds.
+Total time in ScalarMul = 0 seconds.
+Total time in Sigmoid = 0 seconds.
+Total time in Tanh = 0 seconds.
+Total time in Sqrt = 0 seconds.
+Total time in NormaliseL2 = 0 seconds.
+------------------------------------------------------
+Conv data sent = 1064.17 MiB.
+MatMul data sent = 1064.17 MiB.
+BatchNorm data sent = 0 MiB.
+Truncation data sent = 20.3184 MiB.
+Relu data sent = 49.8331 MiB.
+Maxpool data sent = 72.1641 MiB.
+Avgpool data sent = 0.579617 MiB.
+ArgMax data sent = 0.078125 MiB.
+MatAdd data sent = 0 MiB.
+MatAddBroadCast data sent = 0 MiB.
+MulCir data sent = 0 MiB.
+Sigmoid data sent = 0 MiB.
+Tanh data sent = 0 MiB.
+Sqrt data sent = 0 MiB.
+NormaliseL2 data sent = 0 MiB.
+------------------------------------------------------
+0

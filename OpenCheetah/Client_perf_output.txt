@@ -1,0 +1,15 @@
+# started on Wed Aug 21 15:40:20 2024
+
+
+ Performance counter stats for process id '1300':
+
+              2.07 msec task-clock                       #    0.000 CPUs utilized             
+              2.07 msec cpu-clock                        #    0.000 CPUs utilized             
+                 1      context-switches                 #  481.955 /sec                      
+                 0      cpu-migrations                   #    0.000 /sec                      
+               179      page-faults                      #   86.270 K/sec                     
+   <not supported>      cycles                                                                
+   <not supported>      instructions                                                          
+
+      11.012068455 seconds time elapsed
+

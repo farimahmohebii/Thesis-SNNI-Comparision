@@ -1,0 +1,8 @@
+{
+  "model_name": "/home/mohebifarimah/EzPC/Athos/Networks/MobileNet/model.onnx",
+  "output_tensors": ["mobilenetv20_output_flatten0_reshape0"],
+  "target": "PORTHOS", 
+  "scale": 12,
+  "backend": "OT",
+  "bitlength": 64
+}

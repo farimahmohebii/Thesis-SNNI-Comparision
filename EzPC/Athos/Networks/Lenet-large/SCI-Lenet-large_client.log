@@ -1,0 +1,100 @@
+Computation started. CPU and wall clocks initialized.
+Number of CPU cores: 8
+bitlength: 41
+prime_mod: 2199023255552
+Using Eigen for Matmul
+connected
+connected
+connected
+connected
+After base ots, communication = 316594 bytes
+Thread i = 0, total data sent till now = 316594
+Thread i = 1, total data sent till now = 163141
+Thread i = 2, total data sent till now = 294765
+Thread i = 3, total data sent till now = 163141
+-----------Syncronizing-----------
+-----------Syncronized - now starting execution-----------
+Conv2DCSF 1 called N=1, H=28, W=28, CI=1, FH=5, FW=5, CO=32, S=1
+Matmul called s1,s2,s3 = 32 25 784
+Time in sec for current matmul = 0.945
+Time in sec for current conv = 0.946
+Maxpool 1 called N=1, H=14, W=14, C=32, ksizeH=2, ksizeW=2
+Time in sec for current maxpool = 0.454
+Relu 1 called size=6272
+Time in sec for current relu = 0.128
+Conv2DCSF 2 called N=1, H=14, W=14, CI=32, FH=5, FW=5, CO=64, S=1
+Matmul called s1,s2,s3 = 64 800 196
+Time in sec for current matmul = 7.925
+Time in sec for current conv = 7.927
+Maxpool 2 called N=1, H=7, W=7, C=64, ksizeH=2, ksizeW=2
+Time in sec for current maxpool = 0.319
+Relu 2 called size=3136
+Time in sec for current relu = 0.151
+Matmul called s1,s2,s3 = 1 3136 512
+Time in sec for current matmul = 1.891
+Relu 3 called size=512
+Time in sec for current relu = 0.107
+Matmul called s1,s2,s3 = 1 512 10
+Time in sec for current matmul = 0.054
+Elapsed wall time: 16.7664 seconds
+Elapsed CPU time: 28.45 seconds
+CPU usage: 21.2105 %
+Elapsed time: 16.7797 seconds
+Estimated energy used: 7118.13 joules
+Thread i = 0, total data sent till now = 349493507
+Thread i = 1, total data sent till now = 343566261
+Thread i = 2, total data sent till now = 349431306
+Thread i = 3, total data sent till now = 335404533
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+Total time taken = 12430 milliseconds.
+Total data sent = 1313.17 MiB.
+Number of rounds = 111
+Average CPU usage across all segments: 16.494 %
+Peak CPU usage during computation: 28.8854 %
+Total comm (sent+received) = (see SERVER OUTPUT)
+------------------------------------------------------
+Total time in Conv = 8.873 seconds.
+Total time in MatMul = 10.815 seconds.
+Total time in BatchNorm = 0 seconds.
+Total time in Truncation = 0.443 seconds.
+Total time in Relu = 0.386 seconds.
+Total time in MaxPool = 0.773 seconds.
+Total time in AvgPool = 0 seconds.
+Total time in ArgMax = 0 seconds.
+Total time in MatAdd = 0 seconds.
+Total time in MatAddBroadCast = 0 seconds.
+Total time in MulCir = 0 seconds.
+Total time in ScalarMul = 0 seconds.
+Total time in Sigmoid = 0 seconds.
+Total time in Tanh = 0 seconds.
+Total time in Sqrt = 0 seconds.
+Total time in NormaliseL2 = 0 seconds.
+------------------------------------------------------
+Conv data sent = 561.365 MiB.
+MatMul data sent = 645.196 MiB.
+BatchNorm data sent = 0 MiB.
+Truncation data sent = 2.65226 MiB.
+Relu data sent = 3.08983 MiB.
+Maxpool data sent = 8.7643 MiB.
+Avgpool data sent = 0 MiB.
+ArgMax data sent = 0 MiB.
+MatAdd data sent = 0 MiB.
+MatAddBroadCast data sent = 0 MiB.
+MulCir data sent = 0 MiB.
+Sigmoid data sent = 0 MiB.
+Tanh data sent = 0 MiB.
+Sqrt data sent = 0 MiB.
+NormaliseL2 data sent = 0 MiB.
+------------------------------------------------------
+2198762632707
+117461550
+2198859972120
+2198850782244
+178366974
+2198990678267
+188301277
+2199015507215
+2198807268661
+139958867

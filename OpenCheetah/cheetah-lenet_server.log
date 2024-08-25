@@ -1,0 +1,125 @@
+Number of CPU cores: 8
+Using Eigen for Matmul
+Doing BaseOT ...
+using silent ot pack
+using silent ot pack
+using silent ot pack
+using silent ot pack
+After one-time setup, communication
+Thread i = 0, total data sent till now = 1748076
+Thread i = 1, total data sent till now = 1726247
+Thread i = 2, total data sent till now = 1726247
+Thread i = 3, total data sent till now = 1726247
+-----------Syncronizing-----------
+secret_share_mod: 137438953472 bitlength: 37
+backend: Ring-SilentOT-Cheetah
+-----------Syncronized - now starting execution-----------
+HomConv #1 called N=1, H=28, W=28, CI=1, FH=5, FW=5, CO=16, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.019] sent [0.522117] MB
+Maxpool 1 called N=1, H=12, W=12, C=16, ksizeH=2, ksizeW=2
+Time in sec for current maxpool = 0.038
+Relu #1 on 2304 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.005
+HomConv #2 called N=1, H=12, W=12, CI=16, FH=5, FW=5, CO=16, S=1, Padding VALID (0 0 0 0)
+Time in sec for current conv = [0.015] sent [0.469841] MB
+Maxpool 2 called N=1, H=4, W=4, C=16, ksizeH=2, ksizeW=2
+Time in sec for current maxpool = 0.011
+Relu #3 on 256 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.001
+Time in sec for current matmul = 0.01
+Relu #5 on 100 points, truncate=1 by 12 bits
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Mill dotrunc 1 on 16 bits using b = 4
+Time in sec for current relu = 0.002
+Time in sec for current matmul = 0.004
+ArgMax 1 called, s1=1, s2=10
+Elapsed wall time: 8.24846 seconds
+Elapsed CPU time: 7.96 seconds
+CPU usage: 12.0629 %
+Test end computation
+Elapsed time: 8.25774 seconds
+Estimated energy used: 1992.24 joules
+Thread i = 0, total data sent till now = 3422456
+Thread i = 1, total data sent till now = 1756336
+Thread i = 2, total data sent till now = 1827680
+Thread i = 3, total data sent till now = 1756403
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+Total time taken = 114 milliseconds.
+Total data sent = 1.751 MiB.
+Number of rounds = 164
+Total comm (sent+received) = 2.30108 MiB.
+------------------------------------------------------
+Average CPU usage across all segments: 9.06162 %
+Peak CPU usage during computation: 29.0856 %
+Total time in Conv = 0.034 seconds.
+Total time in MatMul = 0.014 seconds.
+Total time in BatchNorm = 0 seconds.
+Total time in Truncation = 0 seconds.
+Total time in Relu = 0.008 seconds.
+Total time in MaxPool = 0.049 seconds.
+Total time in AvgPool = 0 seconds.
+Total time in ArgMax = 0.002 seconds.
+Total time in MatAdd = 0 seconds.
+Total time in MatAddBroadCast = 0 seconds.
+Total time in MulCir = 0 seconds.
+Total time in ScalarMul = 0 seconds.
+Total time in Sigmoid = 0 seconds.
+Total time in Tanh = 0 seconds.
+Total time in Sqrt = 0 seconds.
+Total time in NormaliseL2 = 0 seconds.
+------------------------------------------------------
+Conv data sent = 0.991958 MiB.
+MatMul data sent = 0.145706 MiB.
+BatchNorm data sent = 0 MiB.
+Truncation data sent = 0.00335121 MiB.
+Relu data sent = 0.0388308 MiB.
+Maxpool data sent = 0.20874 MiB.
+Avgpool data sent = 0 MiB.
+ArgMax data sent = 0.00235367 MiB.
+MatAdd data sent = 0 MiB.
+MatAddBroadCast data sent = 0 MiB.
+MulCir data sent = 0 MiB.
+Sigmoid data sent = 0 MiB.
+Tanh data sent = 0 MiB.
+Sqrt data sent = 0 MiB.
+NormaliseL2 data sent = 0 MiB.
+------------------------------------------------------
+Conv data (sent+received) = 1.11107 MiB.
+Conv data received = 0.119109 MiB.
+MatMul data (sent+received) = 0.324303 MiB.
+MatMul data received = 0.178596 MiB.
+BatchNorm data (sent+received) = 0 MiB.
+BatchNorm data received = 0 MiB.
+Truncation data (sent+received) = 0.00671768 MiB.
+Truncation data received = 0.00336647 MiB.
+Relu data (sent+received) = 0.0777683 MiB.
+Relu data received = 0.0389376 MiB.
+Maxpool data (sent+received) = 0.41748 MiB.
+Maxpool data received = 0.20874 MiB.
+Avgpool data (sent+received) = 0 MiB.
+Avgpool data received = 0 MiB.
+ArgMax data (sent+received) = 0.003685 MiB.
+ArgMax data received = 0.00133133 MiB.
+MatAdd data (sent+received) = 0 MiB.
+MatAdd data received = 0 MiB.
+MatAddBroadCast data (sent+received) = 0 MiB.
+MatAddBroadCast data received = 0 MiB.
+MulCir data (sent+received) = 0 MiB.
+ScalarMul data (sent+received) = 0 MiB.
+Sigmoid data (sent+received) = 0 MiB.
+Tanh data (sent+received) = 0 MiB.
+Sqrt data (sent+received) = 0 MiB.
+NormaliseL2 data (sent+received) = 0 MiB.
+0

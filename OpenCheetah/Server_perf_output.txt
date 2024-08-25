@@ -1,0 +1,15 @@
+# started on Wed Aug 21 15:40:20 2024
+
+
+ Performance counter stats for process id '1298':
+
+              2.33 msec task-clock                       #    0.000 CPUs utilized             
+              2.33 msec cpu-clock                        #    0.000 CPUs utilized             
+                 1      context-switches                 #  428.303 /sec                      
+                 1      cpu-migrations                   #  428.303 /sec                      
+               177      page-faults                      #   75.810 K/sec                     
+   <not supported>      cycles                                                                
+   <not supported>      instructions                                                          
+
+      11.012129068 seconds time elapsed
+

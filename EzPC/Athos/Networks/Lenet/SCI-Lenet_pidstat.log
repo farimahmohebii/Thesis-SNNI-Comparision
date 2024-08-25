@@ -1,0 +1,39 @@
+Linux 6.5.0-1024-gcp (instance-20240521-134752) 	08/20/24 	_x86_64_	(4 CPU)
+
+# Time        UID       PID    %usr %system  %guest   %wait    %CPU   CPU  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+08:11:57     1001     92026   41.00    5.00    0.00   38.00   46.00     2   1137.00      0.00   26356   12160   0.05  Lenet_SCI_OT.ou
+08:11:57     1001     92027   44.00    7.00    0.00   46.00   51.00     2    708.00      0.00   19992   10752   0.04  Lenet_SCI_OT.ou
+
+# Time        UID       PID    %usr %system  %guest   %wait    %CPU   CPU  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+08:11:58     1001     92026   51.00    5.00    0.00   42.00   56.00     1    462.00      0.00   32952   14080   0.05  Lenet_SCI_OT.ou
+08:11:58     1001     92027   45.00    5.00    0.00   39.00   50.00     1    887.00      0.00   33052   14208   0.05  Lenet_SCI_OT.ou
+
+# Time        UID       PID    %usr %system  %guest   %wait    %CPU   CPU  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+08:11:59     1001     92026   38.00    5.00    0.00   51.00   43.00     1    483.00      0.00   39728   16000   0.06  Lenet_SCI_OT.ou
+08:11:59     1001     92027   42.00    5.00    0.00   40.00   47.00     1    430.00      0.00   39516   15872   0.06  Lenet_SCI_OT.ou
+
+# Time        UID       PID    %usr %system  %guest   %wait    %CPU   CPU  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+08:12:00     1001     92026   19.00    3.00    0.00   78.00   22.00     3      7.00      0.00   39728   16000   0.06  Lenet_SCI_OT.ou
+08:12:00     1001     92027   17.00    1.00    0.00   32.00   18.00     3      4.00      0.00   39516   15872   0.06  Lenet_SCI_OT.ou
+
+# Time        UID       PID    %usr %system  %guest   %wait    %CPU   CPU  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+08:12:01     1001     92026   18.00    3.00    0.00   80.00   21.00     1     10.00      0.00   39728   16128   0.06  Lenet_SCI_OT.ou
+08:12:01     1001     92027   16.00    1.00    0.00   30.00   17.00     1     48.00      0.00   39780   16256   0.06  Lenet_SCI_OT.ou
+
+# Time        UID       PID    %usr %system  %guest   %wait    %CPU   CPU  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+08:12:02     1001     92026   38.00   22.00    0.00   15.00   60.00     1  56064.00      0.00  816204  204960   0.77  Lenet_SCI_OT.ou
+08:12:02     1001     92027   38.00   24.00    0.00   11.00   62.00     1  56058.00      0.00  816132  205048   0.77  Lenet_SCI_OT.ou
+
+# Time        UID       PID    %usr %system  %guest   %wait    %CPU   CPU  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+08:12:03     1001     92026   29.00   10.00    0.00    5.00   39.00     1   4629.00      0.00  654780   34260   0.13  Lenet_SCI_OT.ou
+08:12:03     1001     92027   51.00    8.00    0.00    0.00   59.00     1   4893.00      0.00  630120   35152   0.13  Lenet_SCI_OT.ou
+
+# Time        UID       PID    %usr %system  %guest   %wait    %CPU   CPU  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+08:12:04     1001     92026   63.00   41.00    0.00    0.00  104.00     3 100391.00      0.00 1048428  434700   1.63  Lenet_SCI_OT.ou
+08:12:04     1001     92027   63.00   44.00    0.00    0.00  107.00     3  99961.00      0.00 1023768  434096   1.63  Lenet_SCI_OT.ou
+
+# Time        UID       PID    %usr %system  %guest   %wait    %CPU   CPU  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+08:12:05     1001     92026   45.00   16.00    0.00    1.00   61.00     3   6896.00      0.00  654576   58972   0.22  Lenet_SCI_OT.ou
+08:12:05     1001     92027   83.00   13.00    0.00    0.00   96.00     1   5041.00      0.00  629916   53420   0.20  Lenet_SCI_OT.ou
+
+# Time        UID       PID    %usr %system  %guest   %wait    %CPU   CPU  minflt/s  majflt/s     VSZ     RSS   %MEM  Command

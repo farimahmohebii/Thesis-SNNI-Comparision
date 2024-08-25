@@ -1,0 +1,124 @@
+Number of CPU cores: 10
+Using Eigen for Matmul
+Doing BaseOT ...
+using kkot pack
+using kkot pack
+using kkot pack
+using kkot pack
+After one-time setup, communication
+Thread i = 0, total data sent till now = 184970
+Thread i = 1, total data sent till now = 294765
+Thread i = 2, total data sent till now = 163141
+Thread i = 3, total data sent till now = 294765
+-----------Syncronizing-----------
+secret_share_mod: 137352314881 bitlength: 37
+backend: PrimeField-OT-SCI_HE
+-----------Syncronized - now starting execution-----------
+Conv2DCSF 1 called N=1, H=28, W=28, CI=1, FH=5, FW=5, CO=32, S=1
+Time in sec for current conv = 0.33
+Maxpool 1 called N=1, H=14, W=14, C=32, ksizeH=2, ksizeW=2
+Time in sec for current maxpool = 0.11
+Relu #1 on 6272 points, truncate=1 by 12 bits
+Time in sec for current relu = 0.043
+Conv2DCSF 2 called N=1, H=14, W=14, CI=32, FH=5, FW=5, CO=64, S=1
+Time in sec for current conv = 1.141
+Maxpool 2 called N=1, H=7, W=7, C=64, ksizeH=2, ksizeW=2
+Time in sec for current maxpool = 0.062
+Relu #3 on 3136 points, truncate=1 by 12 bits
+Time in sec for current relu = 0.017
+Matmul called s1,s2,s3 = 1 3136 512
+Time in sec for current matmul = 2.302
+Relu #5 on 512 points, truncate=1 by 12 bits
+Time in sec for current relu = 0.009
+Matmul called s1,s2,s3 = 1 512 10
+Time in sec for current matmul = 0.026
+Truncate #1 on 10 points by 12 bits
+Elapsed wall time: 15.4733 seconds
+Elapsed CPU time: 13.26 seconds
+CPU usage: 8.56959 %
+Test end computation
+Elapsed time: 15.9192 seconds
+Estimated energy used: 2728.41 joules
+Thread i = 0, total data sent till now = 3060330
+Thread i = 1, total data sent till now = 10466034
+Thread i = 2, total data sent till now = 1726493
+Thread i = 3, total data sent till now = 10826626
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+Total time taken = 4126 milliseconds.
+Total data sent = 23.9771 MiB.
+Number of rounds = 248
+Total comm (sent+received) = 48.2377 MiB.
+------------------------------------------------------
+Average CPU usage across all segments: 10.7626 %
+Peak CPU usage during computation: 38.8938 %
+Total time in Conv = 1.471 seconds.
+Total time in MatMul = 2.328 seconds.
+Total time in BatchNorm = 0 seconds.
+Total time in Truncation = 0.074 seconds.
+Total time in Relu = 0.069 seconds.
+Total time in MaxPool = 0.172 seconds.
+Total time in AvgPool = 0 seconds.
+Total time in ArgMax = 0 seconds.
+Total time in MatAdd = 0 seconds.
+Total time in MatAddBroadCast = 0 seconds.
+Total time in MulCir = 0 seconds.
+Total time in ScalarMul = 0 seconds.
+Total time in Sigmoid = 0 seconds.
+Total time in Tanh = 0 seconds.
+Total time in Sqrt = 0 seconds.
+Total time in NormaliseL2 = 0 seconds.
+------------------------------------------------------
+Conv data sent = 1.00098 MiB.
+MatMul data sent = 0.250244 MiB.
+BatchNorm data sent = 0 MiB.
+Truncation data sent = 4.40077 MiB.
+Relu data sent = 4.78252 MiB.
+Maxpool data sent = 13.5426 MiB.
+Avgpool data sent = 0 MiB.
+ArgMax data sent = 0 MiB.
+MatAdd data sent = 0 MiB.
+MatAddBroadCast data sent = 0 MiB.
+MulCir data sent = 0 MiB.
+Sigmoid data sent = 0 MiB.
+Tanh data sent = 0 MiB.
+Sqrt data sent = 0 MiB.
+NormaliseL2 data sent = 0 MiB.
+------------------------------------------------------
+Conv data (sent+received) = 2.12638 MiB.
+Conv data received = 1.12539 MiB.
+MatMul data (sent+received) = 1.0005 MiB.
+MatMul data received = 0.750256 MiB.
+BatchNorm data (sent+received) = 0 MiB.
+BatchNorm data received = 0 MiB.
+Truncation data (sent+received) = 8.46061 MiB.
+Truncation data received = 4.05984 MiB.
+Relu data (sent+received) = 9.56503 MiB.
+Relu data received = 4.78252 MiB.
+Maxpool data (sent+received) = 27.0852 MiB.
+Maxpool data received = 13.5426 MiB.
+Avgpool data (sent+received) = 0 MiB.
+Avgpool data received = 0 MiB.
+ArgMax data (sent+received) = 0 MiB.
+ArgMax data received = 0 MiB.
+MatAdd data (sent+received) = 0 MiB.
+MatAdd data received = 0 MiB.
+MatAddBroadCast data (sent+received) = 0 MiB.
+MatAddBroadCast data received = 0 MiB.
+MulCir data (sent+received) = 0 MiB.
+ScalarMul data (sent+received) = 0 MiB.
+Sigmoid data (sent+received) = 0 MiB.
+Tanh data (sent+received) = 0 MiB.
+Sqrt data (sent+received) = 0 MiB.
+NormaliseL2 data (sent+received) = 0 MiB.
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
