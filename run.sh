@@ -56,7 +56,7 @@ install_dependencies() {
     echo "Checking for emp-ot library..."
 
     # Check if emp-ot is already installed
-    if [ ! -d "/home/mohebifarimah/Thesis-SNNI-Comparision/OpenCheetah/build/include/emp-ot" ]; then
+    if [ ! -d "~/Thesis-SNNI-Comparision/OpenCheetah/build/include/emp-ot" ]; then
         echo "emp-ot is not installed. Installing emp-ot..."
         
         # Clone emp-ot repository
