@@ -6,12 +6,11 @@ BUILD_DIR="$OPEN_CHEETAH_DIR/build/bin"  # Path to where the executables are loc
 EZPC_DIR="$HOME/Thesis-SNNI-Comparision/EzPC"  # Path to the EzPC directory
 
 # Function to check and install dependencies
-
 install_dependencies() {
     echo "Checking for required dependencies..."
 
     # List of dependencies
-    dependencies=("openssl" "g++" "cmake" "git" "make")
+    dependencies=("openssl" "g++" "cmake" "git" "make" "libssl-dev")
 
     for dep in "${dependencies[@]}"; do
         if ! dpkg -s "$dep" &>/dev/null; then
@@ -53,6 +52,12 @@ install_dependencies() {
 
     echo "All dependencies are installed."
 
+    # Set OpenSSL root directory if not already set
+    if [ -z "$OPENSSL_ROOT_DIR" ]; then
+        OPENSSL_ROOT_DIR=$(openssl version -d | cut -d'"' -f2)
+        export OPENSSL_ROOT_DIR
+    fi
+
     # Install emp-tool library
     echo "Checking for emp-tool library..."
 
@@ -64,9 +69,9 @@ install_dependencies() {
         
         # Build and install emp-tool
         cd emp-tool || exit
-        mkdir build
+        mkdir -p build
         cd build || exit
-        cmake ..
+        cmake -DOPENSSL_ROOT_DIR="$OPENSSL_ROOT_DIR" ..
         make
         sudo make install
         
@@ -89,11 +94,11 @@ install_dependencies() {
         
         # Build and install emp-ot
         cd emp-ot || exit
-        mkdir build
+        mkdir -p build
         cd build || exit
         
         # Configure CMake with proper prefix path for emp-tool
-        cmake -DCMAKE_PREFIX_PATH=/usr/local ..
+        cmake -DCMAKE_PREFIX_PATH=/usr/local -DOPENSSL_ROOT_DIR="$OPENSSL_ROOT_DIR" ..
         
         make
         sudo make install
@@ -108,6 +113,7 @@ install_dependencies() {
 
     echo "All libraries are installed and environment variables are set."
 }
+
 
 # Check and install dependencies at the beginning of the script
 install_dependencies
