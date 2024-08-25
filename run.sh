@@ -52,10 +52,34 @@ install_dependencies() {
 
     echo "All dependencies are installed."
 
+    # Install emp-tool library
+    echo "Checking for emp-tool library..."
+
+    if [ ! -d "/usr/local/include/emp-tool" ]; then
+        echo "emp-tool is not installed. Installing emp-tool..."
+        
+        # Clone emp-tool repository
+        git clone https://github.com/emp-toolkit/emp-tool.git
+        
+        # Build and install emp-tool
+        cd emp-tool || exit
+        mkdir build
+        cd build || exit
+        cmake ..
+        make
+        sudo make install
+        
+        # Return to the original directory
+        cd ../..
+
+        echo "emp-tool library installed successfully."
+    else
+        echo "emp-tool library is already installed."
+    fi
+
     # Install emp-ot library
     echo "Checking for emp-ot library..."
 
-    # Check if emp-ot is already installed
     if [ ! -d "~/Thesis-SNNI-Comparision/OpenCheetah/build/include/emp-ot" ]; then
         echo "emp-ot is not installed. Installing emp-ot..."
         
@@ -77,6 +101,12 @@ install_dependencies() {
     else
         echo "emp-ot library is already installed."
     fi
+
+    # Set environment variables for CMake
+    echo "Setting up CMake environment variables..."
+    export CMAKE_PREFIX_PATH=/usr/local:$CMAKE_PREFIX_PATH
+    export emp-tool_DIR=/usr/local/lib/cmake/emp-tool
+    echo "CMake environment variables set."
 }
 
 # Check and install dependencies at the beginning of the script
