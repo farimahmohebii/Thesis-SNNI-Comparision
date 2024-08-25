@@ -6,6 +6,7 @@ BUILD_DIR="$OPEN_CHEETAH_DIR/build/bin"  # Path to where the executables are loc
 EZPC_DIR="$HOME/Thesis-SNNI-Comparision/EzPC"  # Path to the EzPC directory
 
 # Function to check and install dependencies
+
 install_dependencies() {
     echo "Checking for required dependencies..."
 
@@ -90,7 +91,10 @@ install_dependencies() {
         cd emp-ot || exit
         mkdir build
         cd build || exit
-        cmake ..
+        
+        # Configure CMake with proper prefix path for emp-tool
+        cmake -DCMAKE_PREFIX_PATH=/usr/local ..
+        
         make
         sudo make install
         
@@ -102,11 +106,7 @@ install_dependencies() {
         echo "emp-ot library is already installed."
     fi
 
-    # Set environment variables for CMake
-    echo "Setting up CMake environment variables..."
-    export CMAKE_PREFIX_PATH=/usr/local:$CMAKE_PREFIX_PATH
-    export emp-tool_DIR=/usr/local/lib/cmake/emp-tool
-    echo "CMake environment variables set."
+    echo "All libraries are installed and environment variables are set."
 }
 
 # Check and install dependencies at the beginning of the script
